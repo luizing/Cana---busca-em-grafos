@@ -1,7 +1,6 @@
 package graph;
 
 import benchmark.BenchmarkScenario;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -86,8 +85,8 @@ public final class GraphGenerator {
         }
     }
 
-    private static double randomWeight(Random random) {
-        return 1.0 + random.nextInt(20);
+    private static int randomWeight(Random random) {
+        return 1 + random.nextInt(20);
     }
 
     private static Heuristic linearDistanceHeuristic(int goal) {

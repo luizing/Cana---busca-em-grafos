@@ -1,4 +1,4 @@
 package graph;
 
-public record Edge(int to, double weight) {
+public record Edge(int to, int weight) {
 }

@@ -1,4 +1,4 @@
-package benchmark;
+package Algorithms;
 
 import graph.Edge;
 import graph.Graph;

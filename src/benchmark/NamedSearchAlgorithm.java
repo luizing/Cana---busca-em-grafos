@@ -1,5 +1,9 @@
 package benchmark;
 
+import Algorithms.SearchAlgorithm;
+import Algorithms.SearchRequest;
+import Algorithms.SearchResult;
+
 public record NamedSearchAlgorithm(
         String name,
         AlgorithmCategory category,

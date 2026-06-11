@@ -1,4 +1,4 @@
-package benchmark;
+package Algorithms;
 
 import graph.Graph;
 import graph.Heuristic;

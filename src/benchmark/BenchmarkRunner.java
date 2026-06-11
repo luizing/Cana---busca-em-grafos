@@ -5,6 +5,9 @@ import graph.Graph;
 import java.util.ArrayList;
 import java.util.List;
 
+import Algorithms.SearchRequest;
+import Algorithms.SearchResult;
+
 public final class BenchmarkRunner {
     private final List<NamedSearchAlgorithm> algorithms;
     private final List<BenchmarkScenario> scenarios;

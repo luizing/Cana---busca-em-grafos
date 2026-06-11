@@ -18,7 +18,7 @@ public final class Graph {
         }
     }
 
-    public void addDirectedEdge(int from, int to, double weight) {
+    public void addDirectedEdge(int from, int to, int weight) {
         validateVertex(from);
         validateVertex(to);
         if (weight < 0.0) {
@@ -28,7 +28,7 @@ public final class Graph {
         edgeCount++;
     }
 
-    public void addUndirectedEdge(int a, int b, double weight) {
+    public void addUndirectedEdge(int a, int b, int weight) {
         addDirectedEdge(a, b, weight);
         addDirectedEdge(b, a, weight);
     }

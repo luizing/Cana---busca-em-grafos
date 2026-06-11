@@ -1,4 +1,4 @@
-package benchmark;
+package Algorithms;
 
 import java.util.List;
 

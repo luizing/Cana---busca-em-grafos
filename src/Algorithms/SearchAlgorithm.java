@@ -1,4 +1,4 @@
-package benchmark;
+package Algorithms;
 
 @FunctionalInterface
 public interface SearchAlgorithm {

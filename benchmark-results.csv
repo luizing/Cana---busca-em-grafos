@@ -1,253 +1,253 @@
 scenario,vertices,edges,density,solution_expected,algorithm,category,repetition,status,found_solution,visited_nodes,expanded_nodes,solution_depth,path_cost,quality_ratio,elapsed_nanos,memory_delta_bytes,message
-esparso-com-solucao-10,10,56,SPARSE,true,BFS,BLIND,1,OK,true,4,1,1,9.0,,418147,0,
-esparso-com-solucao-10,10,56,SPARSE,true,BFS,BLIND,2,OK,true,4,1,1,9.0,,64645,0,
-esparso-com-solucao-10,10,56,SPARSE,true,BFS,BLIND,3,OK,true,4,1,1,9.0,,36504,0,
-esparso-com-solucao-10,10,56,SPARSE,true,DFS,BLIND,1,OK,true,2,1,1,16.0,,61443,0,
-esparso-com-solucao-10,10,56,SPARSE,true,DFS,BLIND,2,OK,true,2,1,1,16.0,,25482,0,
-esparso-com-solucao-10,10,56,SPARSE,true,DFS,BLIND,3,OK,true,2,1,1,16.0,,21085,0,
-esparso-com-solucao-10,10,56,SPARSE,true,Best-First,HEURISTIC,1,OK,true,6,2,1,9.0,,15051742,405104,
-esparso-com-solucao-10,10,56,SPARSE,true,Best-First,HEURISTIC,2,OK,true,6,2,1,9.0,,84941,0,
-esparso-com-solucao-10,10,56,SPARSE,true,Best-First,HEURISTIC,3,OK,true,6,2,1,9.0,,63798,0,
-esparso-com-solucao-10,10,56,SPARSE,true,Greedy,HEURISTIC,1,OK,true,6,2,1,9.0,,1179948,0,
-esparso-com-solucao-10,10,56,SPARSE,true,Greedy,HEURISTIC,2,OK,true,6,2,1,9.0,,74247,0,
-esparso-com-solucao-10,10,56,SPARSE,true,Greedy,HEURISTIC,3,OK,true,6,2,1,9.0,,67261,0,
-esparso-com-solucao-10,10,56,SPARSE,true,A-Star,HEURISTIC,1,OK,true,6,2,1,9.0,,926944,0,
-esparso-com-solucao-10,10,56,SPARSE,true,A-Star,HEURISTIC,2,OK,true,6,2,1,9.0,,101971,0,
-esparso-com-solucao-10,10,56,SPARSE,true,A-Star,HEURISTIC,3,OK,true,6,2,1,9.0,,89588,0,
-esparso-com-solucao-10,10,56,SPARSE,true,Pesquisado 1,RESEARCHED,1,OK,true,10,7,1,9.0,,1055014,0,
-esparso-com-solucao-10,10,56,SPARSE,true,Pesquisado 1,RESEARCHED,2,OK,true,10,7,1,9.0,,362049,0,
-esparso-com-solucao-10,10,56,SPARSE,true,Pesquisado 1,RESEARCHED,3,OK,true,10,7,1,9.0,,223086,0,
-esparso-com-solucao-10,10,56,SPARSE,true,Pesquisado 2,RESEARCHED,1,OK,true,10,7,1,9.0,,1218617,0,
-esparso-com-solucao-10,10,56,SPARSE,true,Pesquisado 2,RESEARCHED,2,OK,true,10,7,1,9.0,,292592,0,
-esparso-com-solucao-10,10,56,SPARSE,true,Pesquisado 2,RESEARCHED,3,OK,true,10,7,1,9.0,,199303,0,
-denso-com-solucao-10,10,72,DENSE,true,BFS,BLIND,1,OK,true,7,2,2,31.0,,151307,0,
-denso-com-solucao-10,10,72,DENSE,true,BFS,BLIND,2,OK,true,7,2,2,31.0,,62446,0,
-denso-com-solucao-10,10,72,DENSE,true,BFS,BLIND,3,OK,true,7,2,2,31.0,,54190,0,
-denso-com-solucao-10,10,72,DENSE,true,DFS,BLIND,1,OK,true,8,2,2,19.0,,53098,0,
-denso-com-solucao-10,10,72,DENSE,true,DFS,BLIND,2,OK,true,8,2,2,19.0,,49431,0,
-denso-com-solucao-10,10,72,DENSE,true,DFS,BLIND,3,OK,true,8,2,2,19.0,,44397,0,
-denso-com-solucao-10,10,72,DENSE,true,Best-First,HEURISTIC,1,OK,true,8,3,2,14.0,,225001,0,
-denso-com-solucao-10,10,72,DENSE,true,Best-First,HEURISTIC,2,OK,true,8,3,2,14.0,,125603,0,
-denso-com-solucao-10,10,72,DENSE,true,Best-First,HEURISTIC,3,OK,true,8,3,2,14.0,,184363,0,
-denso-com-solucao-10,10,72,DENSE,true,Greedy,HEURISTIC,1,OK,true,8,3,2,14.0,,107291,0,
-denso-com-solucao-10,10,72,DENSE,true,Greedy,HEURISTIC,2,OK,true,8,3,2,14.0,,141846,0,
-denso-com-solucao-10,10,72,DENSE,true,Greedy,HEURISTIC,3,OK,true,8,3,2,14.0,,155974,0,
-denso-com-solucao-10,10,72,DENSE,true,A-Star,HEURISTIC,1,OK,true,8,3,2,4.0,,110812,0,
-denso-com-solucao-10,10,72,DENSE,true,A-Star,HEURISTIC,2,OK,true,8,3,2,4.0,,75993,0,
-denso-com-solucao-10,10,72,DENSE,true,A-Star,HEURISTIC,3,OK,true,8,3,2,4.0,,75837,0,
-denso-com-solucao-10,10,72,DENSE,true,Pesquisado 1,RESEARCHED,1,OK,true,9,4,2,4.0,,61423,0,
-denso-com-solucao-10,10,72,DENSE,true,Pesquisado 1,RESEARCHED,2,OK,true,9,4,2,4.0,,58640,0,
-denso-com-solucao-10,10,72,DENSE,true,Pesquisado 1,RESEARCHED,3,OK,true,9,4,2,4.0,,56133,0,
-denso-com-solucao-10,10,72,DENSE,true,Pesquisado 2,RESEARCHED,1,OK,true,9,4,2,4.0,,63883,0,
-denso-com-solucao-10,10,72,DENSE,true,Pesquisado 2,RESEARCHED,2,OK,true,9,4,2,4.0,,164988,0,
-denso-com-solucao-10,10,72,DENSE,true,Pesquisado 2,RESEARCHED,3,OK,true,9,4,2,4.0,,53130,0,
-sem-solucao-10,10,16,SPARSE,false,BFS,BLIND,1,OK,false,5,5,-1,,,58034,0,BFS nao encontrou caminho ate o objetivo.
-sem-solucao-10,10,16,SPARSE,false,BFS,BLIND,2,OK,false,5,5,-1,,,31566,0,BFS nao encontrou caminho ate o objetivo.
-sem-solucao-10,10,16,SPARSE,false,BFS,BLIND,3,OK,false,5,5,-1,,,26680,0,BFS nao encontrou caminho ate o objetivo.
-sem-solucao-10,10,16,SPARSE,false,DFS,BLIND,1,OK,false,5,5,-1,,,32575,0,DFS nao encontrou caminho ate o objetivo.
-sem-solucao-10,10,16,SPARSE,false,DFS,BLIND,2,OK,false,5,5,-1,,,88794,0,DFS nao encontrou caminho ate o objetivo.
-sem-solucao-10,10,16,SPARSE,false,DFS,BLIND,3,OK,false,5,5,-1,,,31342,0,DFS nao encontrou caminho ate o objetivo.
-sem-solucao-10,10,16,SPARSE,false,Best-First,HEURISTIC,1,OK,false,5,5,-1,,,51776,0,Best-First Search nao encontrou caminho ate o objetivo.
-sem-solucao-10,10,16,SPARSE,false,Best-First,HEURISTIC,2,OK,false,5,5,-1,,,38823,0,Best-First Search nao encontrou caminho ate o objetivo.
-sem-solucao-10,10,16,SPARSE,false,Best-First,HEURISTIC,3,OK,false,5,5,-1,,,62620,0,Best-First Search nao encontrou caminho ate o objetivo.
-sem-solucao-10,10,16,SPARSE,false,Greedy,HEURISTIC,1,OK,false,5,5,-1,,,84196,0,Greedy Search nao encontrou caminho ate o objetivo.
-sem-solucao-10,10,16,SPARSE,false,Greedy,HEURISTIC,2,OK,false,5,5,-1,,,88161,0,Greedy Search nao encontrou caminho ate o objetivo.
-sem-solucao-10,10,16,SPARSE,false,Greedy,HEURISTIC,3,OK,false,5,5,-1,,,49587,0,Greedy Search nao encontrou caminho ate o objetivo.
-sem-solucao-10,10,16,SPARSE,false,A-Star,HEURISTIC,1,OK,false,5,5,-1,,,42315,0,A-Star nao encontrou caminho ate o objetivo.
-sem-solucao-10,10,16,SPARSE,false,A-Star,HEURISTIC,2,OK,false,5,5,-1,,,39167,0,A-Star nao encontrou caminho ate o objetivo.
-sem-solucao-10,10,16,SPARSE,false,A-Star,HEURISTIC,3,OK,false,5,5,-1,,,36136,0,A-Star nao encontrou caminho ate o objetivo.
-sem-solucao-10,10,16,SPARSE,false,Pesquisado 1,RESEARCHED,1,OK,false,5,5,-1,,,35957,0,Busca de Custo Uniforme nao encontrou caminho ate o objetivo.
-sem-solucao-10,10,16,SPARSE,false,Pesquisado 1,RESEARCHED,2,OK,false,5,5,-1,,,34160,0,Busca de Custo Uniforme nao encontrou caminho ate o objetivo.
-sem-solucao-10,10,16,SPARSE,false,Pesquisado 1,RESEARCHED,3,OK,false,5,5,-1,,,54918,0,Busca de Custo Uniforme nao encontrou caminho ate o objetivo.
-sem-solucao-10,10,16,SPARSE,false,Pesquisado 2,RESEARCHED,1,OK,false,5,5,-1,,,162726,0,Dijkstra nao encontrou caminho ate o objetivo.
-sem-solucao-10,10,16,SPARSE,false,Pesquisado 2,RESEARCHED,2,OK,false,5,5,-1,,,123546,0,Dijkstra nao encontrou caminho ate o objetivo.
-sem-solucao-10,10,16,SPARSE,false,Pesquisado 2,RESEARCHED,3,OK,false,5,5,-1,,,61937,0,Dijkstra nao encontrou caminho ate o objetivo.
-esparso-com-solucao-100,100,596,SPARSE,true,BFS,BLIND,1,OK,true,28,8,3,22.0,,142128,0,
-esparso-com-solucao-100,100,596,SPARSE,true,BFS,BLIND,2,OK,true,28,8,3,22.0,,139618,0,
-esparso-com-solucao-100,100,596,SPARSE,true,BFS,BLIND,3,OK,true,28,8,3,22.0,,128197,0,
-esparso-com-solucao-100,100,596,SPARSE,true,DFS,BLIND,1,OK,true,47,13,13,141.0,,192262,0,
-esparso-com-solucao-100,100,596,SPARSE,true,DFS,BLIND,2,OK,true,47,13,13,141.0,,204311,0,
-esparso-com-solucao-100,100,596,SPARSE,true,DFS,BLIND,3,OK,true,47,13,13,141.0,,175701,0,
-esparso-com-solucao-100,100,596,SPARSE,true,Best-First,HEURISTIC,1,OK,true,36,9,8,90.0,,418768,0,
-esparso-com-solucao-100,100,596,SPARSE,true,Best-First,HEURISTIC,2,OK,true,36,9,8,90.0,,361399,0,
-esparso-com-solucao-100,100,596,SPARSE,true,Best-First,HEURISTIC,3,OK,true,36,9,8,90.0,,488129,0,
-esparso-com-solucao-100,100,596,SPARSE,true,Greedy,HEURISTIC,1,OK,true,36,9,8,90.0,,428892,0,
-esparso-com-solucao-100,100,596,SPARSE,true,Greedy,HEURISTIC,2,OK,true,36,9,8,90.0,,235747,0,
-esparso-com-solucao-100,100,596,SPARSE,true,Greedy,HEURISTIC,3,OK,true,36,9,8,90.0,,262862,0,
-esparso-com-solucao-100,100,596,SPARSE,true,A-Star,HEURISTIC,1,OK,true,96,48,8,55.0,,1190008,0,
-esparso-com-solucao-100,100,596,SPARSE,true,A-Star,HEURISTIC,2,OK,true,96,48,8,55.0,,937428,0,
-esparso-com-solucao-100,100,596,SPARSE,true,A-Star,HEURISTIC,3,OK,true,96,48,8,55.0,,673988,0,
-esparso-com-solucao-100,100,596,SPARSE,true,Pesquisado 1,RESEARCHED,1,OK,true,97,61,5,20.0,,806452,0,
-esparso-com-solucao-100,100,596,SPARSE,true,Pesquisado 1,RESEARCHED,2,OK,true,97,61,5,20.0,,920676,0,
-esparso-com-solucao-100,100,596,SPARSE,true,Pesquisado 1,RESEARCHED,3,OK,true,97,61,5,20.0,,721385,0,
-esparso-com-solucao-100,100,596,SPARSE,true,Pesquisado 2,RESEARCHED,1,OK,true,97,61,5,20.0,,476129,0,
-esparso-com-solucao-100,100,596,SPARSE,true,Pesquisado 2,RESEARCHED,2,OK,true,97,61,5,20.0,,620292,0,
-esparso-com-solucao-100,100,596,SPARSE,true,Pesquisado 2,RESEARCHED,3,OK,true,97,61,5,20.0,,771420,0,
-denso-com-solucao-100,100,5148,DENSE,true,BFS,BLIND,1,OK,true,41,1,1,2.0,,118883,0,
-denso-com-solucao-100,100,5148,DENSE,true,BFS,BLIND,2,OK,true,41,1,1,2.0,,134097,0,
-denso-com-solucao-100,100,5148,DENSE,true,BFS,BLIND,3,OK,true,41,1,1,2.0,,57916,0,
-denso-com-solucao-100,100,5148,DENSE,true,DFS,BLIND,1,OK,true,2,1,1,2.0,,31134,0,
-denso-com-solucao-100,100,5148,DENSE,true,DFS,BLIND,2,OK,true,2,1,1,2.0,,24113,0,
-denso-com-solucao-100,100,5148,DENSE,true,DFS,BLIND,3,OK,true,2,1,1,2.0,,20270,0,
-denso-com-solucao-100,100,5148,DENSE,true,Best-First,HEURISTIC,1,OK,true,41,2,1,2.0,,146353,0,
-denso-com-solucao-100,100,5148,DENSE,true,Best-First,HEURISTIC,2,OK,true,41,2,1,2.0,,85808,0,
-denso-com-solucao-100,100,5148,DENSE,true,Best-First,HEURISTIC,3,OK,true,41,2,1,2.0,,99604,0,
-denso-com-solucao-100,100,5148,DENSE,true,Greedy,HEURISTIC,1,OK,true,41,2,1,2.0,,95836,0,
-denso-com-solucao-100,100,5148,DENSE,true,Greedy,HEURISTIC,2,OK,true,41,2,1,2.0,,82349,0,
-denso-com-solucao-100,100,5148,DENSE,true,Greedy,HEURISTIC,3,OK,true,41,2,1,2.0,,124374,0,
-denso-com-solucao-100,100,5148,DENSE,true,A-Star,HEURISTIC,1,OK,true,41,2,1,2.0,,89874,0,
-denso-com-solucao-100,100,5148,DENSE,true,A-Star,HEURISTIC,2,OK,true,41,2,1,2.0,,88909,0,
-denso-com-solucao-100,100,5148,DENSE,true,A-Star,HEURISTIC,3,OK,true,41,2,1,2.0,,79055,0,
-denso-com-solucao-100,100,5148,DENSE,true,Pesquisado 1,RESEARCHED,1,OK,true,100,22,1,2.0,,797688,405080,
-denso-com-solucao-100,100,5148,DENSE,true,Pesquisado 1,RESEARCHED,2,OK,true,100,22,1,2.0,,703042,0,
-denso-com-solucao-100,100,5148,DENSE,true,Pesquisado 1,RESEARCHED,3,OK,true,100,22,1,2.0,,711546,0,
-denso-com-solucao-100,100,5148,DENSE,true,Pesquisado 2,RESEARCHED,1,OK,true,100,22,1,2.0,,646040,0,
-denso-com-solucao-100,100,5148,DENSE,true,Pesquisado 2,RESEARCHED,2,OK,true,100,22,1,2.0,,656915,0,
-denso-com-solucao-100,100,5148,DENSE,true,Pesquisado 2,RESEARCHED,3,OK,true,100,22,1,2.0,,738746,0,
-sem-solucao-100,100,196,SPARSE,false,BFS,BLIND,1,OK,false,50,50,-1,,,190736,0,BFS nao encontrou caminho ate o objetivo.
-sem-solucao-100,100,196,SPARSE,false,BFS,BLIND,2,OK,false,50,50,-1,,,175881,0,BFS nao encontrou caminho ate o objetivo.
-sem-solucao-100,100,196,SPARSE,false,BFS,BLIND,3,OK,false,50,50,-1,,,151488,0,BFS nao encontrou caminho ate o objetivo.
-sem-solucao-100,100,196,SPARSE,false,DFS,BLIND,1,OK,false,50,50,-1,,,1419775,0,DFS nao encontrou caminho ate o objetivo.
-sem-solucao-100,100,196,SPARSE,false,DFS,BLIND,2,OK,false,50,50,-1,,,157496,0,DFS nao encontrou caminho ate o objetivo.
-sem-solucao-100,100,196,SPARSE,false,DFS,BLIND,3,OK,false,50,50,-1,,,183343,0,DFS nao encontrou caminho ate o objetivo.
-sem-solucao-100,100,196,SPARSE,false,Best-First,HEURISTIC,1,OK,false,50,50,-1,,,163506,0,Best-First Search nao encontrou caminho ate o objetivo.
-sem-solucao-100,100,196,SPARSE,false,Best-First,HEURISTIC,2,OK,false,50,50,-1,,,134244,0,Best-First Search nao encontrou caminho ate o objetivo.
-sem-solucao-100,100,196,SPARSE,false,Best-First,HEURISTIC,3,OK,false,50,50,-1,,,124891,0,Best-First Search nao encontrou caminho ate o objetivo.
-sem-solucao-100,100,196,SPARSE,false,Greedy,HEURISTIC,1,OK,false,50,50,-1,,,134456,0,Greedy Search nao encontrou caminho ate o objetivo.
-sem-solucao-100,100,196,SPARSE,false,Greedy,HEURISTIC,2,OK,false,50,50,-1,,,137858,0,Greedy Search nao encontrou caminho ate o objetivo.
-sem-solucao-100,100,196,SPARSE,false,Greedy,HEURISTIC,3,OK,false,50,50,-1,,,134328,0,Greedy Search nao encontrou caminho ate o objetivo.
-sem-solucao-100,100,196,SPARSE,false,A-Star,HEURISTIC,1,OK,false,50,50,-1,,,154447,0,A-Star nao encontrou caminho ate o objetivo.
-sem-solucao-100,100,196,SPARSE,false,A-Star,HEURISTIC,2,OK,false,50,50,-1,,,138280,0,A-Star nao encontrou caminho ate o objetivo.
-sem-solucao-100,100,196,SPARSE,false,A-Star,HEURISTIC,3,OK,false,50,50,-1,,,133513,0,A-Star nao encontrou caminho ate o objetivo.
-sem-solucao-100,100,196,SPARSE,false,Pesquisado 1,RESEARCHED,1,OK,false,50,50,-1,,,177394,0,Busca de Custo Uniforme nao encontrou caminho ate o objetivo.
-sem-solucao-100,100,196,SPARSE,false,Pesquisado 1,RESEARCHED,2,OK,false,50,50,-1,,,114780,0,Busca de Custo Uniforme nao encontrou caminho ate o objetivo.
-sem-solucao-100,100,196,SPARSE,false,Pesquisado 1,RESEARCHED,3,OK,false,50,50,-1,,,135773,0,Busca de Custo Uniforme nao encontrou caminho ate o objetivo.
-sem-solucao-100,100,196,SPARSE,false,Pesquisado 2,RESEARCHED,1,OK,false,50,50,-1,,,128040,0,Dijkstra nao encontrou caminho ate o objetivo.
-sem-solucao-100,100,196,SPARSE,false,Pesquisado 2,RESEARCHED,2,OK,false,50,50,-1,,,125864,0,Dijkstra nao encontrou caminho ate o objetivo.
-sem-solucao-100,100,196,SPARSE,false,Pesquisado 2,RESEARCHED,3,OK,false,50,50,-1,,,122369,0,Dijkstra nao encontrou caminho ate o objetivo.
-esparso-com-solucao-1000,1000,5990,SPARSE,true,BFS,BLIND,1,OK,true,472,117,4,47.0,,728857,0,
-esparso-com-solucao-1000,1000,5990,SPARSE,true,BFS,BLIND,2,OK,true,472,117,4,47.0,,640515,0,
-esparso-com-solucao-1000,1000,5990,SPARSE,true,BFS,BLIND,3,OK,true,472,117,4,47.0,,643920,0,
-esparso-com-solucao-1000,1000,5990,SPARSE,true,DFS,BLIND,1,OK,true,467,113,113,1125.0,,1197461,0,
-esparso-com-solucao-1000,1000,5990,SPARSE,true,DFS,BLIND,2,OK,true,467,113,113,1125.0,,771623,0,
-esparso-com-solucao-1000,1000,5990,SPARSE,true,DFS,BLIND,3,OK,true,467,113,113,1125.0,,793047,238392,
-esparso-com-solucao-1000,1000,5990,SPARSE,true,Best-First,HEURISTIC,1,OK,true,122,25,24,239.0,,181399,0,
-esparso-com-solucao-1000,1000,5990,SPARSE,true,Best-First,HEURISTIC,2,OK,true,122,25,24,239.0,,151749,0,
-esparso-com-solucao-1000,1000,5990,SPARSE,true,Best-First,HEURISTIC,3,OK,true,122,25,24,239.0,,153199,0,
-esparso-com-solucao-1000,1000,5990,SPARSE,true,Greedy,HEURISTIC,1,OK,true,122,25,24,239.0,,280392,0,
-esparso-com-solucao-1000,1000,5990,SPARSE,true,Greedy,HEURISTIC,2,OK,true,122,25,24,239.0,,272224,0,
-esparso-com-solucao-1000,1000,5990,SPARSE,true,Greedy,HEURISTIC,3,OK,true,122,25,24,239.0,,281814,0,
-esparso-com-solucao-1000,1000,5990,SPARSE,true,A-Star,HEURISTIC,1,OK,true,222,50,12,111.0,,438445,0,
-esparso-com-solucao-1000,1000,5990,SPARSE,true,A-Star,HEURISTIC,2,OK,true,222,50,12,111.0,,471959,0,
-esparso-com-solucao-1000,1000,5990,SPARSE,true,A-Star,HEURISTIC,3,OK,true,222,50,12,111.0,,457033,0,
-esparso-com-solucao-1000,1000,5990,SPARSE,true,Pesquisado 1,RESEARCHED,1,OK,true,1000,827,6,30.0,,5836751,405080,
-esparso-com-solucao-1000,1000,5990,SPARSE,true,Pesquisado 1,RESEARCHED,2,OK,true,1000,827,6,30.0,,6680027,0,
-esparso-com-solucao-1000,1000,5990,SPARSE,true,Pesquisado 1,RESEARCHED,3,OK,true,1000,827,6,30.0,,5618716,405072,
-esparso-com-solucao-1000,1000,5990,SPARSE,true,Pesquisado 2,RESEARCHED,1,OK,true,1000,827,6,30.0,,3738767,0,
-esparso-com-solucao-1000,1000,5990,SPARSE,true,Pesquisado 2,RESEARCHED,2,OK,true,1000,827,6,30.0,,4418214,0,
-esparso-com-solucao-1000,1000,5990,SPARSE,true,Pesquisado 2,RESEARCHED,3,OK,true,1000,827,6,30.0,,3525979,238424,
-denso-com-solucao-1000,1000,51950,DENSE,true,BFS,BLIND,1,OK,true,133,3,2,15.0,,151005,0,
-denso-com-solucao-1000,1000,51950,DENSE,true,BFS,BLIND,2,OK,true,133,3,2,15.0,,125815,0,
-denso-com-solucao-1000,1000,51950,DENSE,true,BFS,BLIND,3,OK,true,133,3,2,15.0,,115711,0,
-denso-com-solucao-1000,1000,51950,DENSE,true,DFS,BLIND,1,OK,true,796,31,31,388.0,,769541,0,
-denso-com-solucao-1000,1000,51950,DENSE,true,DFS,BLIND,2,OK,true,796,31,31,388.0,,696127,0,
-denso-com-solucao-1000,1000,51950,DENSE,true,DFS,BLIND,3,OK,true,796,31,31,388.0,,654912,0,
-denso-com-solucao-1000,1000,51950,DENSE,true,Best-First,HEURISTIC,1,OK,true,231,6,5,50.0,,243630,0,
-denso-com-solucao-1000,1000,51950,DENSE,true,Best-First,HEURISTIC,2,OK,true,231,6,5,50.0,,149669,0,
-denso-com-solucao-1000,1000,51950,DENSE,true,Best-First,HEURISTIC,3,OK,true,231,6,5,50.0,,140436,409064,
-denso-com-solucao-1000,1000,51950,DENSE,true,Greedy,HEURISTIC,1,OK,true,231,6,5,50.0,,160116,0,
-denso-com-solucao-1000,1000,51950,DENSE,true,Greedy,HEURISTIC,2,OK,true,231,6,5,50.0,,172317,0,
-denso-com-solucao-1000,1000,51950,DENSE,true,Greedy,HEURISTIC,3,OK,true,231,6,5,50.0,,131088,0,
-denso-com-solucao-1000,1000,51950,DENSE,true,A-Star,HEURISTIC,1,OK,true,471,13,6,32.0,,325741,0,
-denso-com-solucao-1000,1000,51950,DENSE,true,A-Star,HEURISTIC,2,OK,true,471,13,6,32.0,,260366,0,
-denso-com-solucao-1000,1000,51950,DENSE,true,A-Star,HEURISTIC,3,OK,true,471,13,6,32.0,,275662,0,
-denso-com-solucao-1000,1000,51950,DENSE,true,Pesquisado 1,RESEARCHED,1,OK,true,959,64,2,4.0,,944463,0,
-denso-com-solucao-1000,1000,51950,DENSE,true,Pesquisado 1,RESEARCHED,2,OK,true,959,64,2,4.0,,986850,0,
-denso-com-solucao-1000,1000,51950,DENSE,true,Pesquisado 1,RESEARCHED,3,OK,true,959,64,2,4.0,,975607,413064,
-denso-com-solucao-1000,1000,51950,DENSE,true,Pesquisado 2,RESEARCHED,1,OK,true,959,64,2,4.0,,959355,0,
-denso-com-solucao-1000,1000,51950,DENSE,true,Pesquisado 2,RESEARCHED,2,OK,true,959,64,2,4.0,,1134077,0,
-denso-com-solucao-1000,1000,51950,DENSE,true,Pesquisado 2,RESEARCHED,3,OK,true,959,64,2,4.0,,1085142,0,
-sem-solucao-1000,1000,1996,SPARSE,false,BFS,BLIND,1,OK,false,500,500,-1,,,1048295,226448,BFS nao encontrou caminho ate o objetivo.
-sem-solucao-1000,1000,1996,SPARSE,false,BFS,BLIND,2,OK,false,500,500,-1,,,972429,0,BFS nao encontrou caminho ate o objetivo.
-sem-solucao-1000,1000,1996,SPARSE,false,BFS,BLIND,3,OK,false,500,500,-1,,,940730,0,BFS nao encontrou caminho ate o objetivo.
-sem-solucao-1000,1000,1996,SPARSE,false,DFS,BLIND,1,OK,false,500,500,-1,,,821353,0,DFS nao encontrou caminho ate o objetivo.
-sem-solucao-1000,1000,1996,SPARSE,false,DFS,BLIND,2,OK,false,500,500,-1,,,814065,0,DFS nao encontrou caminho ate o objetivo.
-sem-solucao-1000,1000,1996,SPARSE,false,DFS,BLIND,3,OK,false,500,500,-1,,,830841,0,DFS nao encontrou caminho ate o objetivo.
-sem-solucao-1000,1000,1996,SPARSE,false,Best-First,HEURISTIC,1,OK,false,500,500,-1,,,636087,406064,Best-First Search nao encontrou caminho ate o objetivo.
-sem-solucao-1000,1000,1996,SPARSE,false,Best-First,HEURISTIC,2,OK,false,500,500,-1,,,564134,0,Best-First Search nao encontrou caminho ate o objetivo.
-sem-solucao-1000,1000,1996,SPARSE,false,Best-First,HEURISTIC,3,OK,false,500,500,-1,,,592479,0,Best-First Search nao encontrou caminho ate o objetivo.
-sem-solucao-1000,1000,1996,SPARSE,false,Greedy,HEURISTIC,1,OK,false,500,500,-1,,,551045,0,Greedy Search nao encontrou caminho ate o objetivo.
-sem-solucao-1000,1000,1996,SPARSE,false,Greedy,HEURISTIC,2,OK,false,500,500,-1,,,582057,0,Greedy Search nao encontrou caminho ate o objetivo.
-sem-solucao-1000,1000,1996,SPARSE,false,Greedy,HEURISTIC,3,OK,false,500,500,-1,,,588070,405080,Greedy Search nao encontrou caminho ate o objetivo.
-sem-solucao-1000,1000,1996,SPARSE,false,A-Star,HEURISTIC,1,OK,false,500,500,-1,,,575432,0,A-Star nao encontrou caminho ate o objetivo.
-sem-solucao-1000,1000,1996,SPARSE,false,A-Star,HEURISTIC,2,OK,false,500,500,-1,,,611798,0,A-Star nao encontrou caminho ate o objetivo.
-sem-solucao-1000,1000,1996,SPARSE,false,A-Star,HEURISTIC,3,OK,false,500,500,-1,,,582188,0,A-Star nao encontrou caminho ate o objetivo.
-sem-solucao-1000,1000,1996,SPARSE,false,Pesquisado 1,RESEARCHED,1,OK,false,500,500,-1,,,568217,0,Busca de Custo Uniforme nao encontrou caminho ate o objetivo.
-sem-solucao-1000,1000,1996,SPARSE,false,Pesquisado 1,RESEARCHED,2,OK,false,500,500,-1,,,573716,0,Busca de Custo Uniforme nao encontrou caminho ate o objetivo.
-sem-solucao-1000,1000,1996,SPARSE,false,Pesquisado 1,RESEARCHED,3,OK,false,500,500,-1,,,565863,237432,Busca de Custo Uniforme nao encontrou caminho ate o objetivo.
-sem-solucao-1000,1000,1996,SPARSE,false,Pesquisado 2,RESEARCHED,1,OK,false,500,500,-1,,,564899,0,Dijkstra nao encontrou caminho ate o objetivo.
-sem-solucao-1000,1000,1996,SPARSE,false,Pesquisado 2,RESEARCHED,2,OK,false,500,500,-1,,,554378,0,Dijkstra nao encontrou caminho ate o objetivo.
-sem-solucao-1000,1000,1996,SPARSE,false,Pesquisado 2,RESEARCHED,3,OK,false,500,500,-1,,,597576,405080,Dijkstra nao encontrou caminho ate o objetivo.
-esparso-com-solucao-10000,10000,59998,SPARSE,true,BFS,BLIND,1,OK,true,6814,1991,6,35.0,,8063029,405064,
-esparso-com-solucao-10000,10000,59998,SPARSE,true,BFS,BLIND,2,OK,true,6814,1991,6,35.0,,6769393,238432,
-esparso-com-solucao-10000,10000,59998,SPARSE,true,BFS,BLIND,3,OK,true,6814,1991,6,35.0,,6352318,485088,
-esparso-com-solucao-10000,10000,59998,SPARSE,true,DFS,BLIND,1,OK,true,3789,886,883,8814.0,,3174538,492624,
-esparso-com-solucao-10000,10000,59998,SPARSE,true,DFS,BLIND,2,OK,true,3789,886,883,8814.0,,3202655,70864,
-esparso-com-solucao-10000,10000,59998,SPARSE,true,DFS,BLIND,3,OK,true,3789,886,883,8814.0,,23692925,-5945672,
-esparso-com-solucao-10000,10000,59998,SPARSE,true,Best-First,HEURISTIC,1,OK,true,668,135,134,1364.0,,419236,348864,
-esparso-com-solucao-10000,10000,59998,SPARSE,true,Best-First,HEURISTIC,2,OK,true,668,135,134,1364.0,,277848,0,
-esparso-com-solucao-10000,10000,59998,SPARSE,true,Best-First,HEURISTIC,3,OK,true,668,135,134,1364.0,,224286,345784,
-esparso-com-solucao-10000,10000,59998,SPARSE,true,Greedy,HEURISTIC,1,OK,true,668,135,134,1364.0,,259533,0,
-esparso-com-solucao-10000,10000,59998,SPARSE,true,Greedy,HEURISTIC,2,OK,true,668,135,134,1364.0,,253225,393952,
-esparso-com-solucao-10000,10000,59998,SPARSE,true,Greedy,HEURISTIC,3,OK,true,668,135,134,1364.0,,218555,0,
-esparso-com-solucao-10000,10000,59998,SPARSE,true,A-Star,HEURISTIC,1,OK,true,516,103,35,294.0,,216394,345760,
-esparso-com-solucao-10000,10000,59998,SPARSE,true,A-Star,HEURISTIC,2,OK,true,516,103,35,294.0,,176391,0,
-esparso-com-solucao-10000,10000,59998,SPARSE,true,A-Star,HEURISTIC,3,OK,true,516,103,35,294.0,,209315,317008,
-esparso-com-solucao-10000,10000,59998,SPARSE,true,Pesquisado 1,RESEARCHED,1,OK,true,9754,5317,6,35.0,,9538603,1048576,
-esparso-com-solucao-10000,10000,59998,SPARSE,true,Pesquisado 1,RESEARCHED,2,OK,true,9754,5317,6,35.0,,9212484,1048576,
-esparso-com-solucao-10000,10000,59998,SPARSE,true,Pesquisado 1,RESEARCHED,3,OK,true,9754,5317,6,35.0,,9352349,1048576,
-esparso-com-solucao-10000,10000,59998,SPARSE,true,Pesquisado 2,RESEARCHED,1,OK,true,9754,5317,6,35.0,,9613575,1314344,
-esparso-com-solucao-10000,10000,59998,SPARSE,true,Pesquisado 2,RESEARCHED,2,OK,true,9754,5317,6,35.0,,9706445,1048584,
-esparso-com-solucao-10000,10000,59998,SPARSE,true,Pesquisado 2,RESEARCHED,3,OK,true,9754,5317,6,35.0,,9939922,1048568,
-denso-com-solucao-10000,10000,519934,DENSE,true,BFS,BLIND,1,OK,true,9067,449,3,25.0,,6871499,265760,
-denso-com-solucao-10000,10000,519934,DENSE,true,BFS,BLIND,2,OK,true,9067,449,3,25.0,,3941536,517048,
-denso-com-solucao-10000,10000,519934,DENSE,true,BFS,BLIND,3,OK,true,9067,449,3,25.0,,3038142,353336,
-denso-com-solucao-10000,10000,519934,DENSE,true,DFS,BLIND,1,OK,true,4063,104,104,1047.0,,2250016,388032,
-denso-com-solucao-10000,10000,519934,DENSE,true,DFS,BLIND,2,OK,true,4063,104,104,1047.0,,2310267,270792,
-denso-com-solucao-10000,10000,519934,DENSE,true,DFS,BLIND,3,OK,true,4063,104,104,1047.0,,2542411,302176,
-denso-com-solucao-10000,10000,519934,DENSE,true,Best-First,HEURISTIC,1,OK,true,679,14,13,154.0,,343041,0,
-denso-com-solucao-10000,10000,519934,DENSE,true,Best-First,HEURISTIC,2,OK,true,679,14,13,154.0,,241066,385808,
-denso-com-solucao-10000,10000,519934,DENSE,true,Best-First,HEURISTIC,3,OK,true,679,14,13,154.0,,248544,0,
-denso-com-solucao-10000,10000,519934,DENSE,true,Greedy,HEURISTIC,1,OK,true,679,14,13,154.0,,252534,345792,
-denso-com-solucao-10000,10000,519934,DENSE,true,Greedy,HEURISTIC,2,OK,true,679,14,13,154.0,,251042,0,
-denso-com-solucao-10000,10000,519934,DENSE,true,Greedy,HEURISTIC,3,OK,true,679,14,13,154.0,,294950,131232,
-denso-com-solucao-10000,10000,519934,DENSE,true,A-Star,HEURISTIC,1,OK,true,3518,86,13,154.0,,1374363,385808,
-denso-com-solucao-10000,10000,519934,DENSE,true,A-Star,HEURISTIC,2,OK,true,3518,86,13,154.0,,1385125,352712,
-denso-com-solucao-10000,10000,519934,DENSE,true,A-Star,HEURISTIC,3,OK,true,3518,86,13,154.0,,1384750,230040,
-denso-com-solucao-10000,10000,519934,DENSE,true,Pesquisado 1,RESEARCHED,1,OK,true,10000,9671,5,8.0,,57398757,2097152,
-denso-com-solucao-10000,10000,519934,DENSE,true,Pesquisado 1,RESEARCHED,2,OK,true,10000,9671,5,8.0,,85524877,-12317136,
-denso-com-solucao-10000,10000,519934,DENSE,true,Pesquisado 1,RESEARCHED,3,OK,true,10000,9671,5,8.0,,35190372,2182064,
-denso-com-solucao-10000,10000,519934,DENSE,true,Pesquisado 2,RESEARCHED,1,OK,true,10000,9671,5,8.0,,35042155,2097152,
-denso-com-solucao-10000,10000,519934,DENSE,true,Pesquisado 2,RESEARCHED,2,OK,true,10000,9671,5,8.0,,35970369,2097160,
-denso-com-solucao-10000,10000,519934,DENSE,true,Pesquisado 2,RESEARCHED,3,OK,true,10000,9671,5,8.0,,36201101,2097152,
-sem-solucao-10000,10000,19996,SPARSE,false,BFS,BLIND,1,OK,false,5000,5000,-1,,,1468911,697880,BFS nao encontrou caminho ate o objetivo.
-sem-solucao-10000,10000,19996,SPARSE,false,BFS,BLIND,2,OK,false,5000,5000,-1,,,1074440,701376,BFS nao encontrou caminho ate o objetivo.
-sem-solucao-10000,10000,19996,SPARSE,false,BFS,BLIND,3,OK,false,5000,5000,-1,,,1727789,347200,BFS nao encontrou caminho ate o objetivo.
-sem-solucao-10000,10000,19996,SPARSE,false,DFS,BLIND,1,OK,false,5000,5000,-1,,,3580880,360680,DFS nao encontrou caminho ate o objetivo.
-sem-solucao-10000,10000,19996,SPARSE,false,DFS,BLIND,2,OK,false,5000,5000,-1,,,4046590,470720,DFS nao encontrou caminho ate o objetivo.
-sem-solucao-10000,10000,19996,SPARSE,false,DFS,BLIND,3,OK,false,5000,5000,-1,,,3867040,217176,DFS nao encontrou caminho ate o objetivo.
-sem-solucao-10000,10000,19996,SPARSE,false,Best-First,HEURISTIC,1,OK,false,5000,5000,-1,,,2172814,781376,Best-First Search nao encontrou caminho ate o objetivo.
-sem-solucao-10000,10000,19996,SPARSE,false,Best-First,HEURISTIC,2,OK,false,5000,5000,-1,,,1386705,617896,Best-First Search nao encontrou caminho ate o objetivo.
-sem-solucao-10000,10000,19996,SPARSE,false,Best-First,HEURISTIC,3,OK,false,5000,5000,-1,,,1866147,697880,Best-First Search nao encontrou caminho ate o objetivo.
-sem-solucao-10000,10000,19996,SPARSE,false,Greedy,HEURISTIC,1,OK,false,5000,5000,-1,,,1959411,821424,Greedy Search nao encontrou caminho ate o objetivo.
-sem-solucao-10000,10000,19996,SPARSE,false,Greedy,HEURISTIC,2,OK,false,5000,5000,-1,,,1193271,577840,Greedy Search nao encontrou caminho ate o objetivo.
-sem-solucao-10000,10000,19996,SPARSE,false,Greedy,HEURISTIC,3,OK,false,5000,5000,-1,,,1136673,697888,Greedy Search nao encontrou caminho ate o objetivo.
-sem-solucao-10000,10000,19996,SPARSE,false,A-Star,HEURISTIC,1,OK,false,5000,5000,-1,,,1248561,821424,A-Star nao encontrou caminho ate o objetivo.
-sem-solucao-10000,10000,19996,SPARSE,false,A-Star,HEURISTIC,2,OK,false,5000,5000,-1,,,1731787,577840,A-Star nao encontrou caminho ate o objetivo.
-sem-solucao-10000,10000,19996,SPARSE,false,A-Star,HEURISTIC,3,OK,false,5000,5000,-1,,,1604853,697888,A-Star nao encontrou caminho ate o objetivo.
-sem-solucao-10000,10000,19996,SPARSE,false,Pesquisado 1,RESEARCHED,1,OK,false,5000,5000,-1,,,1315325,821424,Busca de Custo Uniforme nao encontrou caminho ate o objetivo.
-sem-solucao-10000,10000,19996,SPARSE,false,Pesquisado 1,RESEARCHED,2,OK,false,5000,5000,-1,,,1318633,577840,Busca de Custo Uniforme nao encontrou caminho ate o objetivo.
-sem-solucao-10000,10000,19996,SPARSE,false,Pesquisado 1,RESEARCHED,3,OK,false,5000,5000,-1,,,1205174,697888,Busca de Custo Uniforme nao encontrou caminho ate o objetivo.
-sem-solucao-10000,10000,19996,SPARSE,false,Pesquisado 2,RESEARCHED,1,OK,false,5000,5000,-1,,,1198463,821424,Dijkstra nao encontrou caminho ate o objetivo.
-sem-solucao-10000,10000,19996,SPARSE,false,Pesquisado 2,RESEARCHED,2,OK,false,5000,5000,-1,,,1194066,577840,Dijkstra nao encontrou caminho ate o objetivo.
-sem-solucao-10000,10000,19996,SPARSE,false,Pesquisado 2,RESEARCHED,3,OK,false,5000,5000,-1,,,1333968,697888,Dijkstra nao encontrou caminho ate o objetivo.
+esparso-com-solucao-10,10,56,SPARSE,true,BFS,BLIND,1,OK,true,4,1,1,9.0,,201400,0,
+esparso-com-solucao-10,10,56,SPARSE,true,BFS,BLIND,2,OK,true,4,1,1,9.0,,23000,0,
+esparso-com-solucao-10,10,56,SPARSE,true,BFS,BLIND,3,OK,true,4,1,1,9.0,,9100,0,
+esparso-com-solucao-10,10,56,SPARSE,true,DFS,BLIND,1,OK,true,2,1,1,16.0,,19000,0,
+esparso-com-solucao-10,10,56,SPARSE,true,DFS,BLIND,2,OK,true,2,1,1,16.0,,7200,0,
+esparso-com-solucao-10,10,56,SPARSE,true,DFS,BLIND,3,OK,true,2,1,1,16.0,,5600,0,
+esparso-com-solucao-10,10,56,SPARSE,true,Best-First,HEURISTIC,1,OK,true,6,2,1,9.0,,9376000,410304,
+esparso-com-solucao-10,10,56,SPARSE,true,Best-First,HEURISTIC,2,OK,true,6,2,1,9.0,,21700,0,
+esparso-com-solucao-10,10,56,SPARSE,true,Best-First,HEURISTIC,3,OK,true,6,2,1,9.0,,16100,0,
+esparso-com-solucao-10,10,56,SPARSE,true,Greedy,HEURISTIC,1,OK,true,6,2,1,9.0,,345200,0,
+esparso-com-solucao-10,10,56,SPARSE,true,Greedy,HEURISTIC,2,OK,true,6,2,1,9.0,,18600,0,
+esparso-com-solucao-10,10,56,SPARSE,true,Greedy,HEURISTIC,3,OK,true,6,2,1,9.0,,15600,0,
+esparso-com-solucao-10,10,56,SPARSE,true,A-Star,HEURISTIC,1,OK,true,6,2,1,9.0,,339700,0,
+esparso-com-solucao-10,10,56,SPARSE,true,A-Star,HEURISTIC,2,OK,true,6,2,1,9.0,,31100,0,
+esparso-com-solucao-10,10,56,SPARSE,true,A-Star,HEURISTIC,3,OK,true,6,2,1,9.0,,18900,0,
+esparso-com-solucao-10,10,56,SPARSE,true,Pesquisado 1,RESEARCHED,1,OK,true,10,7,1,9.0,,345300,101840,
+esparso-com-solucao-10,10,56,SPARSE,true,Pesquisado 1,RESEARCHED,2,OK,true,10,7,1,9.0,,72500,0,
+esparso-com-solucao-10,10,56,SPARSE,true,Pesquisado 1,RESEARCHED,3,OK,true,10,7,1,9.0,,57300,0,
+esparso-com-solucao-10,10,56,SPARSE,true,Pesquisado 2,RESEARCHED,1,OK,true,10,7,1,9.0,,363600,0,
+esparso-com-solucao-10,10,56,SPARSE,true,Pesquisado 2,RESEARCHED,2,OK,true,10,7,1,9.0,,56300,0,
+esparso-com-solucao-10,10,56,SPARSE,true,Pesquisado 2,RESEARCHED,3,OK,true,10,7,1,9.0,,54400,0,
+denso-com-solucao-10,10,72,DENSE,true,BFS,BLIND,1,OK,true,7,2,2,31.0,,17300,0,
+denso-com-solucao-10,10,72,DENSE,true,BFS,BLIND,2,OK,true,7,2,2,31.0,,12100,0,
+denso-com-solucao-10,10,72,DENSE,true,BFS,BLIND,3,OK,true,7,2,2,31.0,,10800,0,
+denso-com-solucao-10,10,72,DENSE,true,DFS,BLIND,1,OK,true,8,2,2,19.0,,12300,0,
+denso-com-solucao-10,10,72,DENSE,true,DFS,BLIND,2,OK,true,8,2,2,19.0,,9900,0,
+denso-com-solucao-10,10,72,DENSE,true,DFS,BLIND,3,OK,true,8,2,2,19.0,,9000,0,
+denso-com-solucao-10,10,72,DENSE,true,Best-First,HEURISTIC,1,OK,true,8,3,2,14.0,,27500,0,
+denso-com-solucao-10,10,72,DENSE,true,Best-First,HEURISTIC,2,OK,true,8,3,2,14.0,,24300,0,
+denso-com-solucao-10,10,72,DENSE,true,Best-First,HEURISTIC,3,OK,true,8,3,2,14.0,,25000,0,
+denso-com-solucao-10,10,72,DENSE,true,Greedy,HEURISTIC,1,OK,true,8,3,2,14.0,,23900,0,
+denso-com-solucao-10,10,72,DENSE,true,Greedy,HEURISTIC,2,OK,true,8,3,2,14.0,,23700,0,
+denso-com-solucao-10,10,72,DENSE,true,Greedy,HEURISTIC,3,OK,true,8,3,2,14.0,,23400,0,
+denso-com-solucao-10,10,72,DENSE,true,A-Star,HEURISTIC,1,OK,true,8,3,2,4.0,,28900,0,
+denso-com-solucao-10,10,72,DENSE,true,A-Star,HEURISTIC,2,OK,true,8,3,2,4.0,,26400,0,
+denso-com-solucao-10,10,72,DENSE,true,A-Star,HEURISTIC,3,OK,true,8,3,2,4.0,,35000,0,
+denso-com-solucao-10,10,72,DENSE,true,Pesquisado 1,RESEARCHED,1,OK,true,9,4,2,4.0,,32100,0,
+denso-com-solucao-10,10,72,DENSE,true,Pesquisado 1,RESEARCHED,2,OK,true,9,4,2,4.0,,32200,0,
+denso-com-solucao-10,10,72,DENSE,true,Pesquisado 1,RESEARCHED,3,OK,true,9,4,2,4.0,,29200,0,
+denso-com-solucao-10,10,72,DENSE,true,Pesquisado 2,RESEARCHED,1,OK,true,9,4,2,4.0,,31800,0,
+denso-com-solucao-10,10,72,DENSE,true,Pesquisado 2,RESEARCHED,2,OK,true,9,4,2,4.0,,42200,0,
+denso-com-solucao-10,10,72,DENSE,true,Pesquisado 2,RESEARCHED,3,OK,true,9,4,2,4.0,,28100,0,
+sem-solucao-10,10,16,SPARSE,false,BFS,BLIND,1,OK,false,5,5,-1,,,27400,0,BFS nao encontrou caminho ate o objetivo.
+sem-solucao-10,10,16,SPARSE,false,BFS,BLIND,2,OK,false,5,5,-1,,,15800,0,BFS nao encontrou caminho ate o objetivo.
+sem-solucao-10,10,16,SPARSE,false,BFS,BLIND,3,OK,false,5,5,-1,,,12700,0,BFS nao encontrou caminho ate o objetivo.
+sem-solucao-10,10,16,SPARSE,false,DFS,BLIND,1,OK,false,5,5,-1,,,14700,0,DFS nao encontrou caminho ate o objetivo.
+sem-solucao-10,10,16,SPARSE,false,DFS,BLIND,2,OK,false,5,5,-1,,,17600,0,DFS nao encontrou caminho ate o objetivo.
+sem-solucao-10,10,16,SPARSE,false,DFS,BLIND,3,OK,false,5,5,-1,,,11600,0,DFS nao encontrou caminho ate o objetivo.
+sem-solucao-10,10,16,SPARSE,false,Best-First,HEURISTIC,1,OK,false,5,5,-1,,,21300,0,Best-First Search nao encontrou caminho ate o objetivo.
+sem-solucao-10,10,16,SPARSE,false,Best-First,HEURISTIC,2,OK,false,5,5,-1,,,18000,0,Best-First Search nao encontrou caminho ate o objetivo.
+sem-solucao-10,10,16,SPARSE,false,Best-First,HEURISTIC,3,OK,false,5,5,-1,,,22300,0,Best-First Search nao encontrou caminho ate o objetivo.
+sem-solucao-10,10,16,SPARSE,false,Greedy,HEURISTIC,1,OK,false,5,5,-1,,,53400,0,Greedy Search nao encontrou caminho ate o objetivo.
+sem-solucao-10,10,16,SPARSE,false,Greedy,HEURISTIC,2,OK,false,5,5,-1,,,19800,0,Greedy Search nao encontrou caminho ate o objetivo.
+sem-solucao-10,10,16,SPARSE,false,Greedy,HEURISTIC,3,OK,false,5,5,-1,,,16500,0,Greedy Search nao encontrou caminho ate o objetivo.
+sem-solucao-10,10,16,SPARSE,false,A-Star,HEURISTIC,1,OK,false,5,5,-1,,,19000,0,A-Star nao encontrou caminho ate o objetivo.
+sem-solucao-10,10,16,SPARSE,false,A-Star,HEURISTIC,2,OK,false,5,5,-1,,,23500,0,A-Star nao encontrou caminho ate o objetivo.
+sem-solucao-10,10,16,SPARSE,false,A-Star,HEURISTIC,3,OK,false,5,5,-1,,,20100,81304,A-Star nao encontrou caminho ate o objetivo.
+sem-solucao-10,10,16,SPARSE,false,Pesquisado 1,RESEARCHED,1,OK,false,5,5,-1,,,19800,0,Busca de Custo Uniforme nao encontrou caminho ate o objetivo.
+sem-solucao-10,10,16,SPARSE,false,Pesquisado 1,RESEARCHED,2,OK,false,5,5,-1,,,17500,0,Busca de Custo Uniforme nao encontrou caminho ate o objetivo.
+sem-solucao-10,10,16,SPARSE,false,Pesquisado 1,RESEARCHED,3,OK,false,5,5,-1,,,16100,0,Busca de Custo Uniforme nao encontrou caminho ate o objetivo.
+sem-solucao-10,10,16,SPARSE,false,Pesquisado 2,RESEARCHED,1,OK,false,5,5,-1,,,17400,0,Dijkstra nao encontrou caminho ate o objetivo.
+sem-solucao-10,10,16,SPARSE,false,Pesquisado 2,RESEARCHED,2,OK,false,5,5,-1,,,16500,0,Dijkstra nao encontrou caminho ate o objetivo.
+sem-solucao-10,10,16,SPARSE,false,Pesquisado 2,RESEARCHED,3,OK,false,5,5,-1,,,32000,0,Dijkstra nao encontrou caminho ate o objetivo.
+esparso-com-solucao-100,100,596,SPARSE,true,BFS,BLIND,1,OK,true,28,8,3,22.0,,53700,0,
+esparso-com-solucao-100,100,596,SPARSE,true,BFS,BLIND,2,OK,true,28,8,3,22.0,,35200,0,
+esparso-com-solucao-100,100,596,SPARSE,true,BFS,BLIND,3,OK,true,28,8,3,22.0,,34200,0,
+esparso-com-solucao-100,100,596,SPARSE,true,DFS,BLIND,1,OK,true,47,13,13,141.0,,44700,0,
+esparso-com-solucao-100,100,596,SPARSE,true,DFS,BLIND,2,OK,true,47,13,13,141.0,,40600,0,
+esparso-com-solucao-100,100,596,SPARSE,true,DFS,BLIND,3,OK,true,47,13,13,141.0,,42400,0,
+esparso-com-solucao-100,100,596,SPARSE,true,Best-First,HEURISTIC,1,OK,true,36,9,8,90.0,,95000,0,
+esparso-com-solucao-100,100,596,SPARSE,true,Best-First,HEURISTIC,2,OK,true,36,9,8,90.0,,80600,0,
+esparso-com-solucao-100,100,596,SPARSE,true,Best-First,HEURISTIC,3,OK,true,36,9,8,90.0,,88800,0,
+esparso-com-solucao-100,100,596,SPARSE,true,Greedy,HEURISTIC,1,OK,true,36,9,8,90.0,,85100,0,
+esparso-com-solucao-100,100,596,SPARSE,true,Greedy,HEURISTIC,2,OK,true,36,9,8,90.0,,93700,0,
+esparso-com-solucao-100,100,596,SPARSE,true,Greedy,HEURISTIC,3,OK,true,36,9,8,90.0,,85500,0,
+esparso-com-solucao-100,100,596,SPARSE,true,A-Star,HEURISTIC,1,OK,true,96,48,8,55.0,,519000,0,
+esparso-com-solucao-100,100,596,SPARSE,true,A-Star,HEURISTIC,2,OK,true,96,48,8,55.0,,519000,0,
+esparso-com-solucao-100,100,596,SPARSE,true,A-Star,HEURISTIC,3,OK,true,96,48,8,55.0,,443000,0,
+esparso-com-solucao-100,100,596,SPARSE,true,Pesquisado 1,RESEARCHED,1,OK,true,97,61,5,20.0,,515200,81696,
+esparso-com-solucao-100,100,596,SPARSE,true,Pesquisado 1,RESEARCHED,2,OK,true,97,61,5,20.0,,526500,0,
+esparso-com-solucao-100,100,596,SPARSE,true,Pesquisado 1,RESEARCHED,3,OK,true,97,61,5,20.0,,522200,0,
+esparso-com-solucao-100,100,596,SPARSE,true,Pesquisado 2,RESEARCHED,1,OK,true,97,61,5,20.0,,680700,0,
+esparso-com-solucao-100,100,596,SPARSE,true,Pesquisado 2,RESEARCHED,2,OK,true,97,61,5,20.0,,523200,0,
+esparso-com-solucao-100,100,596,SPARSE,true,Pesquisado 2,RESEARCHED,3,OK,true,97,61,5,20.0,,516000,0,
+denso-com-solucao-100,100,5148,DENSE,true,BFS,BLIND,1,OK,true,41,1,1,2.0,,35000,0,
+denso-com-solucao-100,100,5148,DENSE,true,BFS,BLIND,2,OK,true,41,1,1,2.0,,31100,0,
+denso-com-solucao-100,100,5148,DENSE,true,BFS,BLIND,3,OK,true,41,1,1,2.0,,24800,0,
+denso-com-solucao-100,100,5148,DENSE,true,DFS,BLIND,1,OK,true,2,1,1,2.0,,11600,0,
+denso-com-solucao-100,100,5148,DENSE,true,DFS,BLIND,2,OK,true,2,1,1,2.0,,10800,81368,
+denso-com-solucao-100,100,5148,DENSE,true,DFS,BLIND,3,OK,true,2,1,1,2.0,,7900,0,
+denso-com-solucao-100,100,5148,DENSE,true,Best-First,HEURISTIC,1,OK,true,41,2,1,2.0,,62700,0,
+denso-com-solucao-100,100,5148,DENSE,true,Best-First,HEURISTIC,2,OK,true,41,2,1,2.0,,57700,0,
+denso-com-solucao-100,100,5148,DENSE,true,Best-First,HEURISTIC,3,OK,true,41,2,1,2.0,,59400,0,
+denso-com-solucao-100,100,5148,DENSE,true,Greedy,HEURISTIC,1,OK,true,41,2,1,2.0,,62400,0,
+denso-com-solucao-100,100,5148,DENSE,true,Greedy,HEURISTIC,2,OK,true,41,2,1,2.0,,55100,0,
+denso-com-solucao-100,100,5148,DENSE,true,Greedy,HEURISTIC,3,OK,true,41,2,1,2.0,,66300,0,
+denso-com-solucao-100,100,5148,DENSE,true,A-Star,HEURISTIC,1,OK,true,41,2,1,2.0,,67800,0,
+denso-com-solucao-100,100,5148,DENSE,true,A-Star,HEURISTIC,2,OK,true,41,2,1,2.0,,58800,0,
+denso-com-solucao-100,100,5148,DENSE,true,A-Star,HEURISTIC,3,OK,true,41,2,1,2.0,,65100,0,
+denso-com-solucao-100,100,5148,DENSE,true,Pesquisado 1,RESEARCHED,1,OK,true,100,22,1,2.0,,613200,0,
+denso-com-solucao-100,100,5148,DENSE,true,Pesquisado 1,RESEARCHED,2,OK,true,100,22,1,2.0,,595600,0,
+denso-com-solucao-100,100,5148,DENSE,true,Pesquisado 1,RESEARCHED,3,OK,true,100,22,1,2.0,,599100,82672,
+denso-com-solucao-100,100,5148,DENSE,true,Pesquisado 2,RESEARCHED,1,OK,true,100,22,1,2.0,,619700,0,
+denso-com-solucao-100,100,5148,DENSE,true,Pesquisado 2,RESEARCHED,2,OK,true,100,22,1,2.0,,549800,0,
+denso-com-solucao-100,100,5148,DENSE,true,Pesquisado 2,RESEARCHED,3,OK,true,100,22,1,2.0,,450700,0,
+sem-solucao-100,100,196,SPARSE,false,BFS,BLIND,1,OK,false,50,50,-1,,,142600,0,BFS nao encontrou caminho ate o objetivo.
+sem-solucao-100,100,196,SPARSE,false,BFS,BLIND,2,OK,false,50,50,-1,,,117900,0,BFS nao encontrou caminho ate o objetivo.
+sem-solucao-100,100,196,SPARSE,false,BFS,BLIND,3,OK,false,50,50,-1,,,105500,0,BFS nao encontrou caminho ate o objetivo.
+sem-solucao-100,100,196,SPARSE,false,DFS,BLIND,1,OK,false,50,50,-1,,,141300,0,DFS nao encontrou caminho ate o objetivo.
+sem-solucao-100,100,196,SPARSE,false,DFS,BLIND,2,OK,false,50,50,-1,,,160400,0,DFS nao encontrou caminho ate o objetivo.
+sem-solucao-100,100,196,SPARSE,false,DFS,BLIND,3,OK,false,50,50,-1,,,112600,0,DFS nao encontrou caminho ate o objetivo.
+sem-solucao-100,100,196,SPARSE,false,Best-First,HEURISTIC,1,OK,false,50,50,-1,,,131800,0,Best-First Search nao encontrou caminho ate o objetivo.
+sem-solucao-100,100,196,SPARSE,false,Best-First,HEURISTIC,2,OK,false,50,50,-1,,,73100,81696,Best-First Search nao encontrou caminho ate o objetivo.
+sem-solucao-100,100,196,SPARSE,false,Best-First,HEURISTIC,3,OK,false,50,50,-1,,,59400,0,Best-First Search nao encontrou caminho ate o objetivo.
+sem-solucao-100,100,196,SPARSE,false,Greedy,HEURISTIC,1,OK,false,50,50,-1,,,81600,0,Greedy Search nao encontrou caminho ate o objetivo.
+sem-solucao-100,100,196,SPARSE,false,Greedy,HEURISTIC,2,OK,false,50,50,-1,,,122100,0,Greedy Search nao encontrou caminho ate o objetivo.
+sem-solucao-100,100,196,SPARSE,false,Greedy,HEURISTIC,3,OK,false,50,50,-1,,,65700,0,Greedy Search nao encontrou caminho ate o objetivo.
+sem-solucao-100,100,196,SPARSE,false,A-Star,HEURISTIC,1,OK,false,50,50,-1,,,68200,0,A-Star nao encontrou caminho ate o objetivo.
+sem-solucao-100,100,196,SPARSE,false,A-Star,HEURISTIC,2,OK,false,50,50,-1,,,71100,0,A-Star nao encontrou caminho ate o objetivo.
+sem-solucao-100,100,196,SPARSE,false,A-Star,HEURISTIC,3,OK,false,50,50,-1,,,62200,0,A-Star nao encontrou caminho ate o objetivo.
+sem-solucao-100,100,196,SPARSE,false,Pesquisado 1,RESEARCHED,1,OK,false,50,50,-1,,,57500,0,Busca de Custo Uniforme nao encontrou caminho ate o objetivo.
+sem-solucao-100,100,196,SPARSE,false,Pesquisado 1,RESEARCHED,2,OK,false,50,50,-1,,,52000,0,Busca de Custo Uniforme nao encontrou caminho ate o objetivo.
+sem-solucao-100,100,196,SPARSE,false,Pesquisado 1,RESEARCHED,3,OK,false,50,50,-1,,,51900,0,Busca de Custo Uniforme nao encontrou caminho ate o objetivo.
+sem-solucao-100,100,196,SPARSE,false,Pesquisado 2,RESEARCHED,1,OK,false,50,50,-1,,,70900,0,Dijkstra nao encontrou caminho ate o objetivo.
+sem-solucao-100,100,196,SPARSE,false,Pesquisado 2,RESEARCHED,2,OK,false,50,50,-1,,,45800,0,Dijkstra nao encontrou caminho ate o objetivo.
+sem-solucao-100,100,196,SPARSE,false,Pesquisado 2,RESEARCHED,3,OK,false,50,50,-1,,,53500,0,Dijkstra nao encontrou caminho ate o objetivo.
+esparso-com-solucao-1000,1000,5990,SPARSE,true,BFS,BLIND,1,OK,true,472,117,4,47.0,,302100,0,
+esparso-com-solucao-1000,1000,5990,SPARSE,true,BFS,BLIND,2,OK,true,472,117,4,47.0,,239900,81312,
+esparso-com-solucao-1000,1000,5990,SPARSE,true,BFS,BLIND,3,OK,true,472,117,4,47.0,,271600,0,
+esparso-com-solucao-1000,1000,5990,SPARSE,true,DFS,BLIND,1,OK,true,467,113,113,1125.0,,228900,0,
+esparso-com-solucao-1000,1000,5990,SPARSE,true,DFS,BLIND,2,OK,true,467,113,113,1125.0,,235600,89976,
+esparso-com-solucao-1000,1000,5990,SPARSE,true,DFS,BLIND,3,OK,true,467,113,113,1125.0,,247600,0,
+esparso-com-solucao-1000,1000,5990,SPARSE,true,Best-First,HEURISTIC,1,OK,true,122,25,24,239.0,,137000,0,
+esparso-com-solucao-1000,1000,5990,SPARSE,true,Best-First,HEURISTIC,2,OK,true,122,25,24,239.0,,104600,81312,
+esparso-com-solucao-1000,1000,5990,SPARSE,true,Best-First,HEURISTIC,3,OK,true,122,25,24,239.0,,97400,0,
+esparso-com-solucao-1000,1000,5990,SPARSE,true,Greedy,HEURISTIC,1,OK,true,122,25,24,239.0,,98200,0,
+esparso-com-solucao-1000,1000,5990,SPARSE,true,Greedy,HEURISTIC,2,OK,true,122,25,24,239.0,,93300,0,
+esparso-com-solucao-1000,1000,5990,SPARSE,true,Greedy,HEURISTIC,3,OK,true,122,25,24,239.0,,94500,89328,
+esparso-com-solucao-1000,1000,5990,SPARSE,true,A-Star,HEURISTIC,1,OK,true,222,50,12,111.0,,171000,0,
+esparso-com-solucao-1000,1000,5990,SPARSE,true,A-Star,HEURISTIC,2,OK,true,222,50,12,111.0,,159900,0,
+esparso-com-solucao-1000,1000,5990,SPARSE,true,A-Star,HEURISTIC,3,OK,true,222,50,12,111.0,,159700,81312,
+esparso-com-solucao-1000,1000,5990,SPARSE,true,Pesquisado 1,RESEARCHED,1,OK,true,1000,827,6,30.0,,1281400,81304,
+esparso-com-solucao-1000,1000,5990,SPARSE,true,Pesquisado 1,RESEARCHED,2,OK,true,1000,827,6,30.0,,1575000,170640,
+esparso-com-solucao-1000,1000,5990,SPARSE,true,Pesquisado 1,RESEARCHED,3,OK,true,1000,827,6,30.0,,593100,162616,
+esparso-com-solucao-1000,1000,5990,SPARSE,true,Pesquisado 2,RESEARCHED,1,OK,true,1000,827,6,30.0,,515100,165688,
+esparso-com-solucao-1000,1000,5990,SPARSE,true,Pesquisado 2,RESEARCHED,2,OK,true,1000,827,6,30.0,,468800,81312,
+esparso-com-solucao-1000,1000,5990,SPARSE,true,Pesquisado 2,RESEARCHED,3,OK,true,1000,827,6,30.0,,473700,162616,
+denso-com-solucao-1000,1000,51950,DENSE,true,BFS,BLIND,1,OK,true,133,3,2,15.0,,62100,0,
+denso-com-solucao-1000,1000,51950,DENSE,true,BFS,BLIND,2,OK,true,133,3,2,15.0,,41900,81960,
+denso-com-solucao-1000,1000,51950,DENSE,true,BFS,BLIND,3,OK,true,133,3,2,15.0,,35400,0,
+denso-com-solucao-1000,1000,51950,DENSE,true,DFS,BLIND,1,OK,true,796,31,31,388.0,,217700,0,
+denso-com-solucao-1000,1000,51950,DENSE,true,DFS,BLIND,2,OK,true,796,31,31,388.0,,199800,81296,
+denso-com-solucao-1000,1000,51950,DENSE,true,DFS,BLIND,3,OK,true,796,31,31,388.0,,187700,0,
+denso-com-solucao-1000,1000,51950,DENSE,true,Best-First,HEURISTIC,1,OK,true,231,6,5,50.0,,47400,0,
+denso-com-solucao-1000,1000,51950,DENSE,true,Best-First,HEURISTIC,2,OK,true,231,6,5,50.0,,37500,89928,
+denso-com-solucao-1000,1000,51950,DENSE,true,Best-First,HEURISTIC,3,OK,true,231,6,5,50.0,,30500,0,
+denso-com-solucao-1000,1000,51950,DENSE,true,Greedy,HEURISTIC,1,OK,true,231,6,5,50.0,,41900,0,
+denso-com-solucao-1000,1000,51950,DENSE,true,Greedy,HEURISTIC,2,OK,true,231,6,5,50.0,,29400,0,
+denso-com-solucao-1000,1000,51950,DENSE,true,Greedy,HEURISTIC,3,OK,true,231,6,5,50.0,,31200,82296,
+denso-com-solucao-1000,1000,51950,DENSE,true,A-Star,HEURISTIC,1,OK,true,471,13,6,32.0,,48800,0,
+denso-com-solucao-1000,1000,51950,DENSE,true,A-Star,HEURISTIC,2,OK,true,471,13,6,32.0,,42000,81312,
+denso-com-solucao-1000,1000,51950,DENSE,true,A-Star,HEURISTIC,3,OK,true,471,13,6,32.0,,34400,0,
+denso-com-solucao-1000,1000,51950,DENSE,true,Pesquisado 1,RESEARCHED,1,OK,true,959,64,2,4.0,,181200,82672,
+denso-com-solucao-1000,1000,51950,DENSE,true,Pesquisado 1,RESEARCHED,2,OK,true,959,64,2,4.0,,158500,89328,
+denso-com-solucao-1000,1000,51950,DENSE,true,Pesquisado 1,RESEARCHED,3,OK,true,959,64,2,4.0,,154700,89328,
+denso-com-solucao-1000,1000,51950,DENSE,true,Pesquisado 2,RESEARCHED,1,OK,true,959,64,2,4.0,,159500,93344,
+denso-com-solucao-1000,1000,51950,DENSE,true,Pesquisado 2,RESEARCHED,2,OK,true,959,64,2,4.0,,172900,93344,
+denso-com-solucao-1000,1000,51950,DENSE,true,Pesquisado 2,RESEARCHED,3,OK,true,959,64,2,4.0,,171700,93344,
+sem-solucao-1000,1000,1996,SPARSE,false,BFS,BLIND,1,OK,false,500,500,-1,,,244100,89296,BFS nao encontrou caminho ate o objetivo.
+sem-solucao-1000,1000,1996,SPARSE,false,BFS,BLIND,2,OK,false,500,500,-1,,,227200,81304,BFS nao encontrou caminho ate o objetivo.
+sem-solucao-1000,1000,1996,SPARSE,false,BFS,BLIND,3,OK,false,500,500,-1,,,220600,81304,BFS nao encontrou caminho ate o objetivo.
+sem-solucao-1000,1000,1996,SPARSE,false,DFS,BLIND,1,OK,false,500,500,-1,,,178900,0,DFS nao encontrou caminho ate o objetivo.
+sem-solucao-1000,1000,1996,SPARSE,false,DFS,BLIND,2,OK,false,500,500,-1,,,182700,0,DFS nao encontrou caminho ate o objetivo.
+sem-solucao-1000,1000,1996,SPARSE,false,DFS,BLIND,3,OK,false,500,500,-1,,,257500,81304,DFS nao encontrou caminho ate o objetivo.
+sem-solucao-1000,1000,1996,SPARSE,false,Best-First,HEURISTIC,1,OK,false,500,500,-1,,,142100,81312,Best-First Search nao encontrou caminho ate o objetivo.
+sem-solucao-1000,1000,1996,SPARSE,false,Best-First,HEURISTIC,2,OK,false,500,500,-1,,,68300,0,Best-First Search nao encontrou caminho ate o objetivo.
+sem-solucao-1000,1000,1996,SPARSE,false,Best-First,HEURISTIC,3,OK,false,500,500,-1,,,67900,93336,Best-First Search nao encontrou caminho ate o objetivo.
+sem-solucao-1000,1000,1996,SPARSE,false,Greedy,HEURISTIC,1,OK,false,500,500,-1,,,65400,81304,Greedy Search nao encontrou caminho ate o objetivo.
+sem-solucao-1000,1000,1996,SPARSE,false,Greedy,HEURISTIC,2,OK,false,500,500,-1,,,65600,81312,Greedy Search nao encontrou caminho ate o objetivo.
+sem-solucao-1000,1000,1996,SPARSE,false,Greedy,HEURISTIC,3,OK,false,500,500,-1,,,94300,81312,Greedy Search nao encontrou caminho ate o objetivo.
+sem-solucao-1000,1000,1996,SPARSE,false,A-Star,HEURISTIC,1,OK,false,500,500,-1,,,94200,81304,A-Star nao encontrou caminho ate o objetivo.
+sem-solucao-1000,1000,1996,SPARSE,false,A-Star,HEURISTIC,2,OK,false,500,500,-1,,,75900,81304,A-Star nao encontrou caminho ate o objetivo.
+sem-solucao-1000,1000,1996,SPARSE,false,A-Star,HEURISTIC,3,OK,false,500,500,-1,,,69200,0,A-Star nao encontrou caminho ate o objetivo.
+sem-solucao-1000,1000,1996,SPARSE,false,Pesquisado 1,RESEARCHED,1,OK,false,500,500,-1,,,66400,89328,Busca de Custo Uniforme nao encontrou caminho ate o objetivo.
+sem-solucao-1000,1000,1996,SPARSE,false,Pesquisado 1,RESEARCHED,2,OK,false,500,500,-1,,,72000,81312,Busca de Custo Uniforme nao encontrou caminho ate o objetivo.
+sem-solucao-1000,1000,1996,SPARSE,false,Pesquisado 1,RESEARCHED,3,OK,false,500,500,-1,,,83100,90424,Busca de Custo Uniforme nao encontrou caminho ate o objetivo.
+sem-solucao-1000,1000,1996,SPARSE,false,Pesquisado 2,RESEARCHED,1,OK,false,500,500,-1,,,75000,81312,Dijkstra nao encontrou caminho ate o objetivo.
+sem-solucao-1000,1000,1996,SPARSE,false,Pesquisado 2,RESEARCHED,2,OK,false,500,500,-1,,,64500,81312,Dijkstra nao encontrou caminho ate o objetivo.
+sem-solucao-1000,1000,1996,SPARSE,false,Pesquisado 2,RESEARCHED,3,OK,false,500,500,-1,,,64700,0,Dijkstra nao encontrou caminho ate o objetivo.
+esparso-com-solucao-10000,10000,59998,SPARSE,true,BFS,BLIND,1,OK,true,6814,1991,6,35.0,,2209200,472880,
+esparso-com-solucao-10000,10000,59998,SPARSE,true,BFS,BLIND,2,OK,true,6814,1991,6,35.0,,2393200,553536,
+esparso-com-solucao-10000,10000,59998,SPARSE,true,BFS,BLIND,3,OK,true,6814,1991,6,35.0,,2206800,445352,
+esparso-com-solucao-10000,10000,59998,SPARSE,true,DFS,BLIND,1,OK,true,3789,886,883,8814.0,,934300,299600,
+esparso-com-solucao-10000,10000,59998,SPARSE,true,DFS,BLIND,2,OK,true,3789,886,883,8814.0,,889900,300576,
+esparso-com-solucao-10000,10000,59998,SPARSE,true,DFS,BLIND,3,OK,true,3789,886,883,8814.0,,876200,253920,
+esparso-com-solucao-10000,10000,59998,SPARSE,true,Best-First,HEURISTIC,1,OK,true,668,135,134,1364.0,,189200,221368,
+esparso-com-solucao-10000,10000,59998,SPARSE,true,Best-First,HEURISTIC,2,OK,true,668,135,134,1364.0,,430800,201344,
+esparso-com-solucao-10000,10000,59998,SPARSE,true,Best-First,HEURISTIC,3,OK,true,668,135,134,1364.0,,179000,201336,
+esparso-com-solucao-10000,10000,59998,SPARSE,true,Greedy,HEURISTIC,1,OK,true,668,135,134,1364.0,,190400,161328,
+esparso-com-solucao-10000,10000,59998,SPARSE,true,Greedy,HEURISTIC,2,OK,true,668,135,134,1364.0,,201700,201336,
+esparso-com-solucao-10000,10000,59998,SPARSE,true,Greedy,HEURISTIC,3,OK,true,668,135,134,1364.0,,276900,201336,
+esparso-com-solucao-10000,10000,59998,SPARSE,true,A-Star,HEURISTIC,1,OK,true,516,103,35,294.0,,196700,161328,
+esparso-com-solucao-10000,10000,59998,SPARSE,true,A-Star,HEURISTIC,2,OK,true,516,103,35,294.0,,201000,120032,
+esparso-com-solucao-10000,10000,59998,SPARSE,true,A-Star,HEURISTIC,3,OK,true,516,103,35,294.0,,129600,236416,
+esparso-com-solucao-10000,10000,59998,SPARSE,true,Pesquisado 1,RESEARCHED,1,OK,true,9754,5317,6,35.0,,3722400,1097800,
+esparso-com-solucao-10000,10000,59998,SPARSE,true,Pesquisado 1,RESEARCHED,2,OK,true,9754,5317,6,35.0,,3796300,1114232,
+esparso-com-solucao-10000,10000,59998,SPARSE,true,Pesquisado 1,RESEARCHED,3,OK,true,9754,5317,6,35.0,,3257400,1097816,
+esparso-com-solucao-10000,10000,59998,SPARSE,true,Pesquisado 2,RESEARCHED,1,OK,true,9754,5317,6,35.0,,14851400,-12826584,
+esparso-com-solucao-10000,10000,59998,SPARSE,true,Pesquisado 2,RESEARCHED,2,OK,true,9754,5317,6,35.0,,3347600,1229008,
+esparso-com-solucao-10000,10000,59998,SPARSE,true,Pesquisado 2,RESEARCHED,3,OK,true,9754,5317,6,35.0,,3247600,819344,
+denso-com-solucao-10000,10000,519934,DENSE,true,BFS,BLIND,1,OK,true,9067,449,3,25.0,,2657200,531928,
+denso-com-solucao-10000,10000,519934,DENSE,true,BFS,BLIND,2,OK,true,9067,449,3,25.0,,1368700,489672,
+denso-com-solucao-10000,10000,519934,DENSE,true,BFS,BLIND,3,OK,true,9067,449,3,25.0,,1064000,421000,
+denso-com-solucao-10000,10000,519934,DENSE,true,DFS,BLIND,1,OK,true,4063,104,104,1047.0,,665100,293656,
+denso-com-solucao-10000,10000,519934,DENSE,true,DFS,BLIND,2,OK,true,4063,104,104,1047.0,,624000,426632,
+denso-com-solucao-10000,10000,519934,DENSE,true,DFS,BLIND,3,OK,true,4063,104,104,1047.0,,616600,0,
+denso-com-solucao-10000,10000,519934,DENSE,true,Best-First,HEURISTIC,1,OK,true,679,14,13,154.0,,72100,409672,
+denso-com-solucao-10000,10000,519934,DENSE,true,Best-First,HEURISTIC,2,OK,true,679,14,13,154.0,,45600,0,
+denso-com-solucao-10000,10000,519934,DENSE,true,Best-First,HEURISTIC,3,OK,true,679,14,13,154.0,,41500,0,
+denso-com-solucao-10000,10000,519934,DENSE,true,Greedy,HEURISTIC,1,OK,true,679,14,13,154.0,,45100,529696,
+denso-com-solucao-10000,10000,519934,DENSE,true,Greedy,HEURISTIC,2,OK,true,679,14,13,154.0,,43000,0,
+denso-com-solucao-10000,10000,519934,DENSE,true,Greedy,HEURISTIC,3,OK,true,679,14,13,154.0,,45200,0,
+denso-com-solucao-10000,10000,519934,DENSE,true,A-Star,HEURISTIC,1,OK,true,3518,86,13,154.0,,253000,529704,
+denso-com-solucao-10000,10000,519934,DENSE,true,A-Star,HEURISTIC,2,OK,true,3518,86,13,154.0,,226900,425264,
+denso-com-solucao-10000,10000,519934,DENSE,true,A-Star,HEURISTIC,3,OK,true,3518,86,13,154.0,,216900,0,
+denso-com-solucao-10000,10000,519934,DENSE,true,Pesquisado 1,RESEARCHED,1,OK,true,10000,9671,5,8.0,,19241200,2283000,
+denso-com-solucao-10000,10000,519934,DENSE,true,Pesquisado 1,RESEARCHED,2,OK,true,10000,9671,5,8.0,,19033100,2101024,
+denso-com-solucao-10000,10000,519934,DENSE,true,Pesquisado 1,RESEARCHED,3,OK,true,10000,9671,5,8.0,,17028000,2093280,
+denso-com-solucao-10000,10000,519934,DENSE,true,Pesquisado 2,RESEARCHED,1,OK,true,10000,9671,5,8.0,,14702900,2183088,
+denso-com-solucao-10000,10000,519934,DENSE,true,Pesquisado 2,RESEARCHED,2,OK,true,10000,9671,5,8.0,,19440700,-12560368,
+denso-com-solucao-10000,10000,519934,DENSE,true,Pesquisado 2,RESEARCHED,3,OK,true,10000,9671,5,8.0,,14088700,2099872,
+sem-solucao-10000,10000,19996,SPARSE,false,BFS,BLIND,1,OK,false,5000,5000,-1,,,449000,660440,BFS nao encontrou caminho ate o objetivo.
+sem-solucao-10000,10000,19996,SPARSE,false,BFS,BLIND,2,OK,false,5000,5000,-1,,,325100,660448,BFS nao encontrou caminho ate o objetivo.
+sem-solucao-10000,10000,19996,SPARSE,false,BFS,BLIND,3,OK,false,5000,5000,-1,,,318300,443280,BFS nao encontrou caminho ate o objetivo.
+sem-solucao-10000,10000,19996,SPARSE,false,DFS,BLIND,1,OK,false,5000,5000,-1,,,1435600,410240,DFS nao encontrou caminho ate o objetivo.
+sem-solucao-10000,10000,19996,SPARSE,false,DFS,BLIND,2,OK,false,5000,5000,-1,,,1393000,330224,DFS nao encontrou caminho ate o objetivo.
+sem-solucao-10000,10000,19996,SPARSE,false,DFS,BLIND,3,OK,false,5000,5000,-1,,,388000,330224,DFS nao encontrou caminho ate o objetivo.
+sem-solucao-10000,10000,19996,SPARSE,false,Best-First,HEURISTIC,1,OK,false,5000,5000,-1,,,400600,660448,Best-First Search nao encontrou caminho ate o objetivo.
+sem-solucao-10000,10000,19996,SPARSE,false,Best-First,HEURISTIC,2,OK,false,5000,5000,-1,,,379300,660456,Best-First Search nao encontrou caminho ate o objetivo.
+sem-solucao-10000,10000,19996,SPARSE,false,Best-First,HEURISTIC,3,OK,false,5000,5000,-1,,,368700,740472,Best-First Search nao encontrou caminho ate o objetivo.
+sem-solucao-10000,10000,19996,SPARSE,false,Greedy,HEURISTIC,1,OK,false,5000,5000,-1,,,372300,660456,Greedy Search nao encontrou caminho ate o objetivo.
+sem-solucao-10000,10000,19996,SPARSE,false,Greedy,HEURISTIC,2,OK,false,5000,5000,-1,,,378900,812040,Greedy Search nao encontrou caminho ate o objetivo.
+sem-solucao-10000,10000,19996,SPARSE,false,Greedy,HEURISTIC,3,OK,false,5000,5000,-1,,,393600,660464,Greedy Search nao encontrou caminho ate o objetivo.
+sem-solucao-10000,10000,19996,SPARSE,false,A-Star,HEURISTIC,1,OK,false,5000,5000,-1,,,391400,660464,A-Star nao encontrou caminho ate o objetivo.
+sem-solucao-10000,10000,19996,SPARSE,false,A-Star,HEURISTIC,2,OK,false,5000,5000,-1,,,388300,740464,A-Star nao encontrou caminho ate o objetivo.
+sem-solucao-10000,10000,19996,SPARSE,false,A-Star,HEURISTIC,3,OK,false,5000,5000,-1,,,384800,660456,A-Star nao encontrou caminho ate o objetivo.
+sem-solucao-10000,10000,19996,SPARSE,false,Pesquisado 1,RESEARCHED,1,OK,false,5000,5000,-1,,,389600,731976,Busca de Custo Uniforme nao encontrou caminho ate o objetivo.
+sem-solucao-10000,10000,19996,SPARSE,false,Pesquisado 1,RESEARCHED,2,OK,false,5000,5000,-1,,,383600,660464,Busca de Custo Uniforme nao encontrou caminho ate o objetivo.
+sem-solucao-10000,10000,19996,SPARSE,false,Pesquisado 1,RESEARCHED,3,OK,false,5000,5000,-1,,,382300,740464,Busca de Custo Uniforme nao encontrou caminho ate o objetivo.
+sem-solucao-10000,10000,19996,SPARSE,false,Pesquisado 2,RESEARCHED,1,OK,false,5000,5000,-1,,,379200,660448,Dijkstra nao encontrou caminho ate o objetivo.
+sem-solucao-10000,10000,19996,SPARSE,false,Pesquisado 2,RESEARCHED,2,OK,false,5000,5000,-1,,,381300,740480,Dijkstra nao encontrou caminho ate o objetivo.
+sem-solucao-10000,10000,19996,SPARSE,false,Pesquisado 2,RESEARCHED,3,OK,false,5000,5000,-1,,,378500,660464,Dijkstra nao encontrou caminho ate o objetivo.

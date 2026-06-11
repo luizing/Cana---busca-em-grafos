@@ -2,6 +2,8 @@ package benchmark;
 
 import java.util.List;
 
+import Algorithms.SearchAlgorithms;
+
 public final class AlgorithmRegistry {
     private AlgorithmRegistry() {
     }
