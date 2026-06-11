@@ -17,8 +17,11 @@ public class Main {
         mapa.addUndirectedEdge(0,3,15);
         mapa.addUndirectedEdge(1,2,2);
         mapa.addUndirectedEdge(2,3,3);
+        
+        
         Heuristic heuristic = vertex -> {
-        return 0;
+        int[] h = {8, 4, 2, 0};
+        return h[vertex];
         };
 
         SearchRequest cidade = new SearchRequest(mapa, 0 , 3, heuristic); //0=a,1=b...
