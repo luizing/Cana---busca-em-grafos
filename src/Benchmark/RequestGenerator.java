@@ -3,7 +3,6 @@ package Benchmark;
 import Algorithms.SearchRequest;
 import graph.Graph;
 import graph.Heuristic;
-
 import java.util.List;
 
 public final class RequestGenerator {

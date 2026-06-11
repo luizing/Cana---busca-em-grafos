@@ -34,4 +34,27 @@ public record SearchResult(
                 message
         );
     }
+
+    @Override
+    public String toString() {
+        String depth = foundSolution ? String.valueOf(solutionDepth) : "N/A";
+        String cost = foundSolution ? String.valueOf(pathCost) : "N/A";
+
+        return """
+                Resultado da busca:
+                  Solucao encontrada: %s
+                  Caminho: %s
+                  Nos visitados: %d
+                  Nos expandidos: %d
+                  Profundidade da solucao: %s
+                  Custo do caminho: %s
+                """.formatted(
+                foundSolution,
+                path,
+                visitedNodes,
+                expandedNodes,
+                depth,
+                cost
+        );
+    }
 }
