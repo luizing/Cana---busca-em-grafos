@@ -1,7 +1,9 @@
 import benchmark.AlgorithmRegistry;
 import benchmark.BenchmarkRunner;
 import benchmark.BenchmarkScenario;
+import benchmark.BenchmarkResult;
 import benchmark.CsvExporter;
+import benchmark.HtmlReportExporter;
 import graph.GraphGenerator;
 
 import java.io.IOException;
@@ -18,9 +20,15 @@ public class Main {
                 3
         );
 
-        Path output = Path.of("benchmark-results.csv");
-        CsvExporter.write(output, runner.runAll());
+        List<BenchmarkResult> results = runner.runAll();
+        Path csvOutput = Path.of("benchmark-results.csv");
+        Path reportOutput = Path.of("benchmark-report.html");
 
-        System.out.println("Benchmark finalizado. Resultados em: " + output.toAbsolutePath());
+        CsvExporter.write(csvOutput, results);
+        HtmlReportExporter.write(reportOutput, results);
+
+        System.out.println("Benchmark finalizado.");
+        System.out.println("CSV: " + csvOutput.toAbsolutePath());
+        System.out.println("Grafico: " + reportOutput.toAbsolutePath());
     }
 }

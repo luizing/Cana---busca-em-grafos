@@ -3,7 +3,6 @@ package Algorithms;
 import graph.Edge;
 import graph.Graph;
 import graph.Heuristic;
-
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -146,92 +145,35 @@ public final class SearchAlgorithms {
     }
 
     public static SearchResult bestFirstSearch(SearchRequest request) {
-        return prioritySearch(
-                request,
-                SearchMode.MARK_ON_INSERT,
-                (vertex, pathCost, requestHeuristic) -> requestHeuristic.estimate(vertex),
-                "Best-First Search nao encontrou caminho ate o objetivo."
-        );
-    }
-
-    public static SearchResult greedySearch(SearchRequest request) {
-        return prioritySearch(
-                request,
-                SearchMode.MARK_ON_INSERT,
-                (vertex, pathCost, requestHeuristic) -> requestHeuristic.estimate(vertex),
-                "Greedy Search nao encontrou caminho ate o objetivo."
-        );
-    }
-
-    public static SearchResult aStarSearch(SearchRequest request) {
-        return prioritySearch(
-                request,
-                SearchMode.ALLOW_BETTER_PATH,
-                (vertex, pathCost, requestHeuristic) -> pathCost + requestHeuristic.estimate(vertex),
-                "A-Star nao encontrou caminho ate o objetivo."
-        );
-    }
-
-    public static SearchResult researchedAlgorithmOne(SearchRequest request) {
-        return prioritySearch(
-                request,
-                SearchMode.ALLOW_BETTER_PATH,
-                (vertex, pathCost, requestHeuristic) -> pathCost,
-                "Busca de Custo Uniforme nao encontrou caminho ate o objetivo."
-        );
-    }
-
-    public static SearchResult researchedAlgorithmTwo(SearchRequest request) {
-        return prioritySearch(
-                request,
-                SearchMode.ALLOW_BETTER_PATH,
-                (vertex, pathCost, requestHeuristic) -> pathCost,
-                "Dijkstra nao encontrou caminho ate o objetivo."
-        );
-    }
-
-    private static SearchResult prioritySearch(
-            SearchRequest request,
-            SearchMode mode,
-            PriorityFunction priorityFunction,
-            String notFoundMessage
-    ) {
         Graph graph = request.graph();
         int start = request.startVertex();
         int goal = request.goalVertex();
-        int vertices = graph.vertexCount();
+        Heuristic heuristic = request.heuristic() == null ? vertex -> 0.0 : request.heuristic();
 
-        boolean[] visited = new boolean[vertices];
-        boolean[] closed = new boolean[vertices];
-        int[] parent = new int[vertices];
-        double[] cost = new double[vertices];
-        PriorityQueue<SearchNode> frontier = new PriorityQueue<>(
-                Comparator.comparingDouble(SearchNode::priority)
-                        .thenComparingInt(SearchNode::vertex)
+        boolean[] visited = new boolean[graph.vertexCount()];
+        int[] parent = new int[graph.vertexCount()];
+        double[] cost = new double[graph.vertexCount()];
+        PriorityQueue<Integer> priorityQueue = new PriorityQueue<>(
+                Comparator.comparingDouble(heuristic::estimate)
+                        .thenComparingInt(Integer::intValue)
         );
 
         Arrays.fill(parent, -1);
         Arrays.fill(cost, Double.POSITIVE_INFINITY);
 
-        cost[start] = 0.0;
         visited[start] = true;
-        Heuristic heuristic = request.heuristic() == null ? vertex -> 0.0 : request.heuristic();
-        frontier.add(new SearchNode(start, priorityFunction.apply(start, 0.0, heuristic), 0.0));
+        cost[start] = 0.0;
+        priorityQueue.add(start);
 
         int visitedNodes = 1;
         int expandedNodes = 0;
 
-        while (!frontier.isEmpty()) {
-            SearchNode node = frontier.remove();
-            int current = node.vertex();
+        if (start == goal) {
+            return SearchResult.found(List.of(start), visitedNodes, expandedNodes, 0.0);
+        }
 
-            if (mode == SearchMode.ALLOW_BETTER_PATH && node.pathCost() > cost[current]) {
-                continue;
-            }
-            if (closed[current]) {
-                continue;
-            }
-
+        while (!priorityQueue.isEmpty()) {
+            int current = priorityQueue.remove();
             expandedNodes++;
 
             if (current == goal) {
@@ -243,28 +185,221 @@ public final class SearchAlgorithms {
                 );
             }
 
+            for (Edge edge : graph.neighborsOf(current)) {
+                int neighbor = edge.to();
+                if (visited[neighbor]) {
+                    continue;
+                }
+
+                visited[neighbor] = true;
+                parent[neighbor] = current;
+                cost[neighbor] = cost[current] + edge.weight();
+                visitedNodes++;
+                priorityQueue.add(neighbor);
+            }
+        }
+
+        return SearchResult.notFound(
+                visitedNodes,
+                expandedNodes,
+                "Best-First Search nao encontrou caminho ate o objetivo."
+        );
+    }
+
+    public static SearchResult greedySearch(SearchRequest request) {
+        Graph graph = request.graph();
+        int start = request.startVertex();
+        int goal = request.goalVertex();
+        Heuristic heuristic = request.heuristic() == null ? vertex -> 0.0 : request.heuristic();
+
+        boolean[] visited = new boolean[graph.vertexCount()];
+        int[] parent = new int[graph.vertexCount()];
+        double[] cost = new double[graph.vertexCount()];
+        PriorityQueue<Integer> priorityQueue = new PriorityQueue<>(
+                Comparator.comparingDouble(heuristic::estimate)
+                        .thenComparingInt(Integer::intValue)
+        );
+
+        Arrays.fill(parent, -1);
+        Arrays.fill(cost, Double.POSITIVE_INFINITY);
+
+        visited[start] = true;
+        cost[start] = 0.0;
+        priorityQueue.add(start);
+
+        int visitedNodes = 1;
+        int expandedNodes = 0;
+
+        if (start == goal) {
+            return SearchResult.found(List.of(start), visitedNodes, expandedNodes, 0.0);
+        }
+
+        while (!priorityQueue.isEmpty()) {
+            int current = priorityQueue.remove();
+            expandedNodes++;
+
+            if (current == goal) {
+                return SearchResult.found(
+                        reconstructPath(parent, start, goal),
+                        visitedNodes,
+                        expandedNodes,
+                        cost[goal]
+                );
+            }
+
+            for (Edge edge : graph.neighborsOf(current)) {
+                int neighbor = edge.to();
+                if (visited[neighbor]) {
+                    continue;
+                }
+
+                visited[neighbor] = true;
+                parent[neighbor] = current;
+                cost[neighbor] = cost[current] + edge.weight();
+                visitedNodes++;
+                priorityQueue.add(neighbor);
+            }
+        }
+
+        return SearchResult.notFound(
+                visitedNodes,
+                expandedNodes,
+                "Greedy Search nao encontrou caminho ate o objetivo."
+        );
+    }
+
+    public static SearchResult aStarSearch(SearchRequest request) {
+        Graph graph = request.graph();
+        int start = request.startVertex();
+        int goal = request.goalVertex();
+        Heuristic heuristic = request.heuristic() == null ? vertex -> 0.0 : request.heuristic();
+
+        boolean[] visited = new boolean[graph.vertexCount()];
+        boolean[] closed = new boolean[graph.vertexCount()];
+        int[] parent = new int[graph.vertexCount()];
+        double[] cost = new double[graph.vertexCount()];
+        PriorityQueue<AStarNode> priorityQueue = new PriorityQueue<>(
+                Comparator.comparingDouble(AStarNode::priority)
+                        .thenComparingDouble(AStarNode::cost)
+                        .thenComparingInt(AStarNode::vertex)
+        );
+
+        Arrays.fill(parent, -1);
+        Arrays.fill(cost, Double.POSITIVE_INFINITY);
+
+        visited[start] = true;
+        cost[start] = 0.0;
+        priorityQueue.add(new AStarNode(start, 0.0, heuristic.estimate(start)));
+
+        int visitedNodes = 1;
+        int expandedNodes = 0;
+
+        if (start == goal) {
+            return SearchResult.found(List.of(start), visitedNodes, expandedNodes, 0.0);
+        }
+
+        while (!priorityQueue.isEmpty()) {
+            AStarNode node = priorityQueue.remove();
+            int current = node.vertex();
+
+            if (node.cost() > cost[current] || closed[current]) {
+                continue;
+            }
+
             closed[current] = true;
+            expandedNodes++;
+
+            if (current == goal) {
+                return SearchResult.found(
+                        reconstructPath(parent, start, goal),
+                        visitedNodes,
+                        expandedNodes,
+                        cost[goal]
+                );
+            }
 
             for (Edge edge : graph.neighborsOf(current)) {
                 int neighbor = edge.to();
                 double newCost = cost[current] + edge.weight();
 
-                if (mode == SearchMode.MARK_ON_INSERT) {
-                    if (visited[neighbor]) {
-                        continue;
-                    }
-
-                    visited[neighbor] = true;
-                    parent[neighbor] = current;
-                    cost[neighbor] = newCost;
-                    visitedNodes++;
-                    frontier.add(new SearchNode(
-                            neighbor,
-                            priorityFunction.apply(neighbor, newCost, heuristic),
-                            newCost
-                    ));
+                if (newCost >= cost[neighbor]) {
                     continue;
                 }
+
+                if (!visited[neighbor]) {
+                    visited[neighbor] = true;
+                    visitedNodes++;
+                }
+
+                closed[neighbor] = false;
+                parent[neighbor] = current;
+                cost[neighbor] = newCost;
+                priorityQueue.add(new AStarNode(
+                        neighbor,
+                        newCost,
+                        newCost + heuristic.estimate(neighbor)
+                ));
+            }
+        }
+
+        return SearchResult.notFound(
+                visitedNodes,
+                expandedNodes,
+                "A-Star nao encontrou caminho ate o objetivo."
+        );
+    }
+
+    public static SearchResult uniformCost(SearchRequest request) {
+        Graph graph = request.graph();
+        int start = request.startVertex();
+        int goal = request.goalVertex();
+
+        boolean[] visited = new boolean[graph.vertexCount()];
+        boolean[] closed = new boolean[graph.vertexCount()];
+        int[] parent = new int[graph.vertexCount()];
+        double[] cost = new double[graph.vertexCount()];
+        PriorityQueue<UniformCostNode> priorityQueue = new PriorityQueue<>(
+                Comparator.comparingDouble(UniformCostNode::cost)
+                        .thenComparingInt(UniformCostNode::vertex)
+        );
+
+        Arrays.fill(parent, -1);
+        Arrays.fill(cost, Double.POSITIVE_INFINITY);
+
+        visited[start] = true;
+        cost[start] = 0.0;
+        priorityQueue.add(new UniformCostNode(start, 0.0));
+
+        int visitedNodes = 1;
+        int expandedNodes = 0;
+
+        if (start == goal) {
+            return SearchResult.found(List.of(start), visitedNodes, expandedNodes, 0.0);
+        }
+
+        while (!priorityQueue.isEmpty()) {
+            UniformCostNode node = priorityQueue.remove();
+            int current = node.vertex();
+
+            if (closed[current] || node.cost() > cost[current]) {
+                continue;
+            }
+
+            closed[current] = true;
+            expandedNodes++;
+
+            if (current == goal) {
+                return SearchResult.found(
+                        reconstructPath(parent, start, goal),
+                        visitedNodes,
+                        expandedNodes,
+                        cost[goal]
+                );
+            }
+
+            for (Edge edge : graph.neighborsOf(current)) {
+                int neighbor = edge.to();
+                double newCost = cost[current] + edge.weight();
 
                 if (closed[neighbor] || newCost >= cost[neighbor]) {
                     continue;
@@ -274,29 +409,101 @@ public final class SearchAlgorithms {
                     visited[neighbor] = true;
                     visitedNodes++;
                 }
+
                 parent[neighbor] = current;
                 cost[neighbor] = newCost;
-                frontier.add(new SearchNode(
-                        neighbor,
-                        priorityFunction.apply(neighbor, newCost, heuristic),
-                        newCost
-                ));
+                priorityQueue.add(new UniformCostNode(neighbor, newCost));
             }
         }
 
-        return SearchResult.notFound(visitedNodes, expandedNodes, notFoundMessage);
+        return SearchResult.notFound(
+                visitedNodes,
+                expandedNodes,
+                "Busca de Custo Uniforme nao encontrou caminho ate o objetivo."
+        );
     }
 
-    private enum SearchMode {
-        MARK_ON_INSERT,
-        ALLOW_BETTER_PATH
+    public static SearchResult dijkstra(SearchRequest request) {
+        Graph graph = request.graph();
+        int start = request.startVertex();
+        int goal = request.goalVertex();
+
+        boolean[] visited = new boolean[graph.vertexCount()];
+        boolean[] closed = new boolean[graph.vertexCount()];
+        int[] parent = new int[graph.vertexCount()];
+        double[] cost = new double[graph.vertexCount()];
+        PriorityQueue<DijkstraNode> priorityQueue = new PriorityQueue<>(
+                Comparator.comparingDouble(DijkstraNode::cost)
+                        .thenComparingInt(DijkstraNode::vertex)
+        );
+
+        Arrays.fill(parent, -1);
+        Arrays.fill(cost, Double.POSITIVE_INFINITY);
+
+        visited[start] = true;
+        cost[start] = 0.0;
+        priorityQueue.add(new DijkstraNode(start, 0.0));
+
+        int visitedNodes = 1;
+        int expandedNodes = 0;
+
+        if (start == goal) {
+            return SearchResult.found(List.of(start), visitedNodes, expandedNodes, 0.0);
+        }
+
+        while (!priorityQueue.isEmpty()) {
+            DijkstraNode node = priorityQueue.remove();
+            int current = node.vertex();
+
+            if (closed[current] || node.cost() > cost[current]) {
+                continue;
+            }
+
+            closed[current] = true;
+            expandedNodes++;
+
+            if (current == goal) {
+                return SearchResult.found(
+                        reconstructPath(parent, start, goal),
+                        visitedNodes,
+                        expandedNodes,
+                        cost[goal]
+                );
+            }
+
+            for (Edge edge : graph.neighborsOf(current)) {
+                int neighbor = edge.to();
+                double newCost = cost[current] + edge.weight();
+
+                if (closed[neighbor] || newCost >= cost[neighbor]) {
+                    continue;
+                }
+
+                if (!visited[neighbor]) {
+                    visited[neighbor] = true;
+                    visitedNodes++;
+                }
+
+                parent[neighbor] = current;
+                cost[neighbor] = newCost;
+                priorityQueue.add(new DijkstraNode(neighbor, newCost));
+            }
+        }
+
+        return SearchResult.notFound(
+                visitedNodes,
+                expandedNodes,
+                "Dijkstra nao encontrou caminho ate o objetivo."
+        );
     }
 
-    @FunctionalInterface
-    private interface PriorityFunction {
-        double apply(int vertex, double pathCost, Heuristic heuristic);
+    private record AStarNode(int vertex, double cost, double priority) {
     }
 
-    private record SearchNode(int vertex, double priority, double pathCost) {
+    private record UniformCostNode(int vertex, double cost) {
     }
+
+    private record DijkstraNode(int vertex, double cost) //to acumulated cost
+    {}
+
 }
